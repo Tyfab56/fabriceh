@@ -18,16 +18,36 @@
   
     </head>
     <body>
+
+
     <div class="container">
-			<div class="row row--wrapper" data-section="hfg_header_layout_main">
-				<div class="hfg-slot left"></div><div class="hfg-slot center"><div class="builder-item desktop-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
-	
-            <div class="site-logo">
-	                    <a class="brand" href="https://www.fabriceh-photographer.com/" title="Fabrice H Photographer" aria-label="Fabrice H Photographer"><img width="200" height="49" src="./Fabrice H Photographer_files/cropped-logo-collins-330.png" class="neve-site-logo skip-lazy" alt="" decoding="async" loading="lazy" data-variant="logo" srcset="" sizes="(max-width: 200px) 100vw, 200px"></a></div>
+			<div class="row">
+				
+                <div class="hfg-slot center">
+                    <div class="builder-item desktop-left"><div class="item--inner builder-item--logo" >
+                        <div class="site-logo">
+                            <a class="brand" href="{{route('home') }}" title="Fabrice H Photographer" aria-label="Fabrice H Photographer">
+                                <img width="200" height="49" src="{{ asset('assets/images/logo.png') }}" class="neve-site-logo skip-lazy" alt="" decoding="async" loading="lazy" data-variant="logo" srcset="" sizes="(max-width: 200px) 100vw, 200px">
+                            </a>
+                        </div>
 
+	                 </div>
+                </div>
+            </div>
+            <div class="row">
+           
+				
+				
+				
+				
+				<a href="#">
+                    <span class="et_pb_image_wrap ">
+                        <img  width="1600" height="533" src="{{ asset('assets/images/DSC0389-Panorama_uxga.jpg') }}" >
+                     </span>    
+                </a>
+                    
+            </div>
 	</div>
-
-</div></div><div class="hfg-slot right"></div>							</div>
-		</div>
+		
     </body>
 </html>
