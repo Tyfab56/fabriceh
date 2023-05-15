@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="{{asset('css/style.css') }}">
   
     </head>
-    <body class="antialiased">
+    <body>
     <div class="container">
 			<div class="row row--wrapper" data-section="hfg_header_layout_main">
 				<div class="hfg-slot left"></div><div class="hfg-slot center"><div class="builder-item desktop-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">
