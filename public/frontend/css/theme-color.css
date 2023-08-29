@@ -1,0 +1,142 @@
+
+/* ======================
+   Theme color
+   ====================== */
+::-moz-selection {
+	background: #a6a6a6;
+	color: #111;
+}
+
+::selection {
+	background: #a6a6a6;
+	color: #111;
+}
+
+body, 
+.btn.black-btn,
+.resume-items .item .bullet, 
+.tw-loader,
+.contact-form input, 
+.contact-form textarea{
+	background: #111;
+}
+
+body, a,
+a:visited, a:active, p, p a,
+.navbar-expand-md .navbar-nav .nav-link ,
+ul.social-icons li a,
+.btn.black-btn,
+.tp-btn-close i,
+.page-title .subtitle,
+.page-title .subtitle a,
+.item-info h3,
+.item-info h3 > a,
+.item-info a span,
+.blog-content .blog-meta span,
+.contact-info .info,
+.barfiller .tip,
+.blog-content .blog-meta span,
+.single-blog .blog-meta span,
+.contact-form input, 
+.contact-form textarea,
+.contact-form input:focus, 
+.contact-form textarea:focus,
+.contact-info .info,
+.entry ol li, 
+.entry ul li, 
+.entry ol li a, 
+.entry ul li a,
+.entry .blockquote pre,
+.entry pre,
+.entry .table-bordered td, 
+.entry .table-bordered th   {
+	color: #a6a6a6;
+}
+.tw-ellipsis div,
+.barfiller,
+.item-info a:hover span {
+	background: #a6a6a6;
+}
+.btn.black-btn,
+.resume-items .item::before, 
+.resume-items .item .bullet,
+.contact-form input:focus, 
+.contact-form textarea:focus,
+.entry .blockquote,
+.entry pre {
+	border-color: #a6a6a6;
+}
+
+/*===hover Color===*/
+p a:hover,
+a:hover,
+a:focus,
+.navbar-expand-md .navbar-nav .active .nav-link,
+.navbar-expand-md .navbar-nav .nav-link:hover,
+.btn.black-btn:hover,
+.blog-content .blog-title a:hover,
+.entry ol a:hover, .entry ul li:hover   {
+	color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6,
+.blog-content .blog-title a,
+.page-title h1.title a {
+	color: #ddd;
+}
+
+.item-info a:hover span {
+	color: #111;
+}
+
+/*===home-overlay and Portfolio===*/
+.home-overlay::before,
+.item-box::before {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.avatar img,
+.info-image img,
+.info-content,
+.item-info a span,
+.recent-post-heading {
+	border-color: rgba(255, 255, 255, 0.2);
+}
+.tp-btn-close {
+	background: rgba(255, 255, 255, 0.2);
+}
+/*===progress-bar===*/
+.barfiller .fill,
+.barfiller .tip {
+    background: #4f4f4f;	
+}
+.barfiller .tip:after {
+    border-color: #4f4f4f transparent;
+}
+.contact-form input, 
+.contact-form textarea,
+.contact-info .info .icon {
+    border-color: #4f4f4f;
+}
+
+@media (max-width: 767px) {
+	.navbar .menu-toggler .line,
+	.navbar .menu-toggler .line::before,
+	.navbar .menu-toggler .line::after {
+		background: #ddd;
+	}
+	.navbar .navbar-collapse .navbar-nav {
+		background: #111;
+	}	
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.navbar .menu-toggler .line,
+	.navbar .menu-toggler .line::before,
+	.navbar .menu-toggler .line::after {
+		background: #ddd;
+	}
+	.navbar .navbar-collapse .navbar-nav {
+		background: #111;
+	}	
+}
+

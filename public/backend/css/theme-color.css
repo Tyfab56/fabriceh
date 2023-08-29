@@ -1,0 +1,60 @@
+
+::-moz-selection {
+	background: #111;
+	color: #ffffff;
+}
+::selection {
+	background: #111;
+	color: #ffffff;
+}
+
+/*===background color===*/
+.tw-ellipsis div,
+.sidebar-wrapper ul.left-main-menu > li::before,
+.tw_radio .checkround:after,
+a.editIconBtn {
+	background: #111;
+}
+
+/*===background and font color===*/
+.btn.green-btn,
+.my-profile-nav .dropdown-item:focus, 
+.my-profile-nav .dropdown-item:hover,
+.page-item.active .page-link,
+.login .login-btn,
+.tw_checkbox input:checked ~ span,
+.chosen-container .chosen-results li.highlighted {
+	background: #111;
+	color: #ffffff;
+}
+
+/*===Border color===*/
+.btn.green-btn:hover,
+.page-item.active .page-link,
+input.form-control:focus,
+input:focus,
+.custom-select:focus,
+.tw_checkbox input:checked ~ span,
+input.form-control:focus, 
+.form-group input:focus, 
+.form-group textarea:focus, 
+.card .card-body input:focus, 
+.card .card-body textarea:focus {
+	border-color: #111;
+}
+
+/*===Color===*/
+a, a:focus, a:hover,
+.btn.green-btn:hover,
+.sidebar-wrapper ul.left-main-menu > li:hover a, 
+.sidebar-wrapper ul.left-main-menu > li.active a,
+ul.tabs-nav li a.active,
+.login h3 a:hover,
+.page-link,
+.page-link:hover,
+.tw-card-header a:hover,
+.tw-card .tw-card-img .tw-card-overlay i.fa,
+.file_up_box a:hover {
+	color: #111;
+}
+
