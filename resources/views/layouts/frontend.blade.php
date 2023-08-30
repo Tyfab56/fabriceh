@@ -61,7 +61,26 @@ $SettingsData = gSettings();
 			</div>						
 		</div>						
 	</div><!--/loader/-->
+    <!--Navbar-->
+<nav class="navbar-expand-md navbar fixed-top">
+		<a class="navbar-brand" href="{{ url('/') }}">
+			<img class="img-logo" src="{{ $SettingsData['front_logo'] ? asset('media/'.$SettingsData['front_logo']) : asset('frontend/images/logo.png') }}" alt="logo"/>
+		</a>
+		<span class="menu-toggler ml-auto" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" role="button">
+			<span class="line"></span>
+		</span>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a></li>
+				<li class="nav-item"><a class="nav-link" href="#about">{{ __('About') }}</a></li>
+				<li class="nav-item"><a class="nav-link" href="#portfolio">{{ __('Portfolio') }}</a></li>
+				<li class="nav-item"><a class="nav-link" href="#blog">{{ __('Blog') }}</a></li>
+				<li class="nav-item"><a class="nav-link" href="#contact">{{ __('Contact') }}</a></li>
+			</ul>
+		</div>
+	</nav>	
 
+	<!--/Navbar/-->
 	@yield('content')
 	
 	<div class="cookie_consent_card active">
