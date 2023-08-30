@@ -71,7 +71,7 @@ $SettingsData = gSettings();
 						</div>
 						<h1>{{ $name }}</h1>
 						<h2 class="ah-headline clip">
-							<span>{{ __("I'm a") }} </span>
+							
 							<span class="ah-words-wrapper">
 								@foreach ($animated_clip_text as $key => $row)
 									@if($key == 0)         
