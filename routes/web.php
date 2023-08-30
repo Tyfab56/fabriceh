@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 //Frontend Page
 Route::get('/','Frontend\FrontendController@index')->name('frontend.home');
 Route::get('/blog','Frontend\FrontendController@getBlogs')->name('frontend.blog');
-Route::get('/another','Frontend\FrontendController@getAnother')->name('frontend.another');
+Route::get('/another','Frontend\FrontendController@another')->name('frontend.another');
 
 Route::get('/article/{id}/{title}','Frontend\FrontendController@getArticle')->name('frontend.article');
 
