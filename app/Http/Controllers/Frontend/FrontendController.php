@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
-use App\HomePageModel;
+use App\HomePageModel; 
 use App\AboutPageModel;
 use App\Portfolio;
 use App\Blog;
@@ -31,6 +31,7 @@ class FrontendController extends Controller
 			$home_post_content = $home_data->post_content;
 			$postContent = json_decode($home_post_content);
 			$data['name'] = $home_data->post_title;
+			$data['subtitle'] = $home_data->post_subtitle;
 			$data['your_photo'] = $postContent->your_photo;
 			$data['background_image'] = $postContent->background_image;
 			$data['video_background'] = $postContent->video_background;

@@ -50,6 +50,7 @@ $SettingsData = gSettings();
 			</ul>
 		</div>
 	</nav>	
+
 	<!--/Navbar/-->
 	<!--Home Section-->
 	@if($SettingsData['home_page'] == 'image_background')
@@ -70,6 +71,7 @@ $SettingsData = gSettings();
 							<img src="{{ $your_photo ? asset('media/'.$your_photo) : asset('frontend/images/avatar.jpg') }}" alt="image" />
 						</div>
 						<h1>{{ $name }}</h1>
+						<h3>{{ $subtitle }}</h3>
 						<h2 class="ah-headline clip">
 							
 							<span class="ah-words-wrapper">
