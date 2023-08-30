@@ -93,7 +93,7 @@ $SettingsData = gSettings();
 	};
 	var DataTableLanFile = "{{ asset('resources/lang/datatable') }}"+"/"+"{{ str_replace('_', '-', app()->getLocale()) }}"+".json";
 	</script>
-	<div class="custom-popup light width-100 display-none" id="lightCustomModal">
+	<div class="custom-popup light width-100 display-none" id="lightCustomModal"> 
 		<div class="padding-md">
 			<h4 class="m-top-none">{{ __('This is alert message') }}</h4>
 		</div>

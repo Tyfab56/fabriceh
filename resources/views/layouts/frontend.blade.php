@@ -18,8 +18,7 @@ $SettingsData = gSettings();
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
 	<!-- CSS -->
 	<link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css')}}">
-	<link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}">
-	<link rel="stylesheet" href="{{asset('frontend/css/jquery.animatedheadline.css')}}">
+	<link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}"> 
 	<link rel="stylesheet" href="{{asset('frontend/css/normalize.min.css')}}">
 	<link rel="stylesheet" href="{{asset('frontend/css/animate.min.css')}}">
 	<link rel="stylesheet" href="{{asset('frontend/css/simplebar.css')}}"/>
