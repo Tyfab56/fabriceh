@@ -4,9 +4,9 @@
 $SettingsData = gSettings();
 @endphp
 
-@section('title',  $SettingsData['site_title'] ? __('Another').' - '.$SettingsData['site_title'] : __('Home').' - Personal Portfolio Laravel')
+@section('title',  $SettingsData['site_title'] ? __('Home').' - '.$SettingsData['site_title'] : __('Home').' - Personal Portfolio Laravel')
 
-section('meta-content')
+@section('meta-content')
 	<meta name="keywords" content="{{ $SettingsData['metatag']->keywords }}" />
 	<meta name="description" content="{{ $SettingsData['metatag']->description }}" />
 	<meta property="og:title" content="{{ $SettingsData['site_title'] }}" />
@@ -32,5 +32,5 @@ section('meta-content')
 @endsection
 
 @section('content')
-Another world
+
 @endsection
