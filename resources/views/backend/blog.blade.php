@@ -137,7 +137,7 @@
 @endsection
 
 @push('scripts')
-<link href="{{asset('public/backend/editor/summernote-bs4.min.css')}}" rel="stylesheet">
-<script src="{{asset('public/backend/editor/summernote-bs4.min.js')}}"></script>
-<script src="{{asset('public/backend/pages/blogpage.js')}}"></script>
+<link href="{{asset('backend/editor/summernote-bs4.min.css')}}" rel="stylesheet">
+<script src="{{asset('backend/editor/summernote-bs4.min.js')}}"></script>
+<script src="{{asset('backend/pages/blogpage.js')}}"></script>
 @endpush

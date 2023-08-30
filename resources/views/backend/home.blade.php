@@ -25,10 +25,19 @@
 					<div class="card-header">{{ __('Home Page') }}</div>
 					<div class="card-body tabs-area p-0">
 						<ul class="tabs-nav">
+						    <li><a data-tabid="0" class="link-tab active" href="javascript:void(0);"><i class="fa fa-minus"></i>{{ __('NEW') }}</a></li>
 							<li><a data-tabid="1" class="link-tab active" href="javascript:void(0);"><i class="fa fa-minus"></i>{{ __('Homepage Versions') }}</a></li>
 							<li><a data-tabid="2" class="link-tab" href="javascript:void(0);"><i class="fa fa-minus"></i>{{ __('Home Content') }}</a></li>
 							<li><a data-tabid="3" class="link-tab" href="javascript:void(0);"><i class="fa fa-minus"></i>{{ __('Animated Clip Text') }}</a></li>
 						</ul>
+						<div class="tabs-body">
+						<div id="tabId-0" class="tab-link-content tabshow">
+								<div class="row">
+									<div class="col-lg-6 mb-30">
+									</div>
+								</div>
+						</div>
+                        </div>
 						<div class="tabs-body">
 							<!--Homepage Versions-->
 							<div id="tabId-1" class="tab-link-content tabshow">

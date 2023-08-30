@@ -11,7 +11,7 @@ var onDataTableUsers;
 	
 	$('#tw-content').hide();
 	
-	public_path = $("#public_path").val();
+	//public_path = $("#public_path").val();
 	
 	$.ajaxSetup({
 		headers: {

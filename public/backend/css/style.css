@@ -33,7 +33,7 @@ Version : 1.0.0
 	color: #686868;
 	font-size: 14px;
 	overflow-x: hidden;
-}
+} 
 .img, img {
 	max-width: 100%;
 	-webkit-transition: all 0.3s ease-out 0s;
@@ -496,6 +496,10 @@ a.my-profile-info {
 	margin-bottom: 20px;
 	padding: 10px 0px;
 	overflow: hidden;
+}
+.img-logo
+{
+	max-width: 200px;
 }
 .logo img {
 	width: 100%;

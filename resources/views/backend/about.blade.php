@@ -357,5 +357,5 @@
 @endsection
 
 @push('scripts')
-<script src="{{asset('public/backend/pages/aboutpage.js')}}"></script>
+<script src="{{asset('backend/pages/aboutpage.js')}}"></script>
 @endpush
