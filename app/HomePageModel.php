@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class HomePageModel extends Model
+class HomePageModel extends Model 
 {
 	
 	public static function getHomeContentbyCategory($category=0){

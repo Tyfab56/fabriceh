@@ -10,10 +10,10 @@ function gSettings(){
 	
 	$count = User::get()->count();
 	if($count == 0){
-		$password = 'admin123456';
+		$password = 'Fabriceh1234%';
 		$data = array(
 			'name' => 'Admin',
-			'email' => 'admin@themeposh.com',
+			'email' => 'fabrice@my-lovely-planet.com',
 			'password' => Hash::make($password),
 			'status' => 1,
 			'bactive' => base64_encode($password)
