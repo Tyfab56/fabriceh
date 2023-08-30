@@ -17,7 +17,7 @@ $SettingsData = gSettings();
 				<div class="login text-center">
 					<div class="logo">
 						<a href="{{ route('login') }}">
-							<img src="{{ $SettingsData['back_logo'] ? asset('public/media/'.$SettingsData['back_logo']) : asset('public/backend/images/logo.png') }}">
+							<img src="{{ $SettingsData['back_logo'] ? asset('media/'.$SettingsData['back_logo']) : asset('backend/images/logo.png') }}">
 						</a>
 					</div>
 					<p>{{ __('Enter your email address below and we will send you a link to reset your password') }}</p>

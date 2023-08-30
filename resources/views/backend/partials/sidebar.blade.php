@@ -1,6 +1,6 @@
 <div class="sidebar-wrapper" >
 	<div class="logo">
-		<a href="{{ url('/') }}"><img src="{{ $SettingsData['back_logo'] ? asset('public/media/'.$SettingsData['back_logo']) : asset('public/backend/images/logo.png') }}" alt="logo" /></a>
+		<a href="{{ url('/') }}"><img src="{{ $SettingsData['back_logo'] ? asset('media/'.$SettingsData['back_logo']) : asset('backend/images/logo.png') }}" alt="logo" /></a>
 	</div>
 	<ul class="left-main-menu">
 		<li><a class="active" href="{{ route('backend.home') }}"><i class="fa fa-home"></i><span>{{ __('Home Page') }}</span></a></li>

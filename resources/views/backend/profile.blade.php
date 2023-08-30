@@ -100,5 +100,5 @@
 @endsection
 
 @push('scripts')
-<script src="{{asset('public/backend/pages/profile.js')}}"></script>
+<script src="{{asset('backend/pages/profile.js')}}"></script>
 @endpush

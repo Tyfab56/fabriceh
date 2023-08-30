@@ -15,7 +15,7 @@ $SettingsData = gSettings();
 	<meta property="og:description" content="{{ $SettingsData['metatag']->description }}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{{ $SettingsData['metatag']->url }}" />
-	<meta property="og:image" content="{{ asset('public/media/'.$SettingsData['metatag']->cover_image) }}" />
+	<meta property="og:image" content="{{ asset('media/'.$SettingsData['metatag']->cover_image) }}" />
 	<meta property="og:image:width" content="600" />
 	<meta property="og:image:height" content="315" />
 	@if($SettingsData['metatag']->app_id != '')
@@ -29,20 +29,20 @@ $SettingsData = gSettings();
 	<meta name="twitter:url" content="{{ $SettingsData['metatag']->url }}">
 	<meta name="twitter:title" content="{{ $SettingsData['site_title'] }}">
 	<meta name="twitter:description" content="{{ $SettingsData['metatag']->description }}">
-	<meta name="twitter:image" content="{{ asset('public/media/'.$SettingsData['metatag']->cover_image) }}">
+	<meta name="twitter:image" content="{{ asset('media/'.$SettingsData['metatag']->cover_image) }}">
 	<!-- favicon icon -->
-	<link rel="shortcut icon" href="{{ $SettingsData['favicon'] ? asset('public/media/'.$SettingsData['favicon']) : asset('public/frontend/images/favicon.ico') }}" type="image/x-icon">
-	<link rel="icon" href="{{ $SettingsData['favicon'] ? asset('public/media/'.$SettingsData['favicon']) : asset('public/frontend/images/favicon.ico') }}" type="image/x-icon">
+	<link rel="shortcut icon" href="{{ $SettingsData['favicon'] ? asset('media/'.$SettingsData['favicon']) : asset('frontend/images/favicon.ico') }}" type="image/x-icon">
+	<link rel="icon" href="{{ $SettingsData['favicon'] ? asset('media/'.$SettingsData['favicon']) : asset('frontend/images/favicon.ico') }}" type="image/x-icon">
 	<!-- google fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap">
 	<!-- CSS -->
-	<link rel="stylesheet" href="{{asset('public/backend/css/bootstrap.min.css')}}">
-	<link rel="stylesheet" href="{{asset('public/backend/css/font-awesome.min.css')}}">
-	<link rel="stylesheet" href="{{asset('public/backend/css/jquery.mCustomScrollbar.css')}}"/>
-	<link rel="stylesheet" href="{{asset('public/backend/css/chosen/bootstrap-chosen.min.css')}}">
-	<link rel="stylesheet" href="{{asset('public/backend/css/dataTables.bootstrap4.min.css')}}">
-	<link rel="stylesheet" href="{{asset('public/backend/css/bootstrap-colorpicker.min.css')}}">
-	<link rel="stylesheet" href="{{asset('public/backend/css/style.css')}}">
+	<link rel="stylesheet" href="{{asset('backend/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{asset('backend/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" href="{{asset('backend/css/jquery.mCustomScrollbar.css')}}"/>
+	<link rel="stylesheet" href="{{asset('backend/css/chosen/bootstrap-chosen.min.css')}}">
+	<link rel="stylesheet" href="{{asset('backend/css/dataTables.bootstrap4.min.css')}}">
+	<link rel="stylesheet" href="{{asset('backend/css/bootstrap-colorpicker.min.css')}}">
+	<link rel="stylesheet" href="{{asset('backend/css/style.css')}}">
 	<!-- Theme color change in settings menu -->
 	<style type="text/css">
 	.tw-ellipsis div, .sidebar-wrapper ul.left-main-menu > li::before, .tw_radio .checkround:after, a.editIconBtn { background: {{$SettingsData['color']->backend_background_color}}; }
@@ -67,21 +67,21 @@ $SettingsData = gSettings();
 		</div><!-- /Page Content/ -->
 	</div><!--/wrapper-->
 	<!-- JS -->
-	<script src="{{asset('public/backend/js/jquery-3.5.1.min.js')}}"></script>
-	<script src="{{asset('public/backend/js/popper.min.js')}}"></script>
-	<script src="{{asset('public/backend/js/bootstrap.min.js')}}"></script>
-	<script src="{{asset('public/backend/js/jquery.mCustomScrollbar.min.js')}}"></script>
-	<script src="{{asset('public/backend/js/chosen.jquery.min.js')}}"></script>
-	<script src="{{asset('public/backend/js/parsley.min.js')}}"></script>
-	<script src="{{asset('public/backend/js/jquery.dataTables.min.js')}}"></script>
-	<script src="{{asset('public/backend/js/dataTables.bootstrap4.min.js')}}"></script>
-	<script src="{{asset('public/backend/js/bootstrap-colorpicker.min.js')}}"></script>
-	<script src="{{asset('public/backend/js/main.js')}}"></script>
+	<script src="{{asset('backend/js/jquery-3.5.1.min.js')}}"></script>
+	<script src="{{asset('backend/js/popper.min.js')}}"></script>
+	<script src="{{asset('backend/js/bootstrap.min.js')}}"></script>
+	<script src="{{asset('backend/js/jquery.mCustomScrollbar.min.js')}}"></script>
+	<script src="{{asset('backend/js/chosen.jquery.min.js')}}"></script>
+	<script src="{{asset('backend/js/parsley.min.js')}}"></script>
+	<script src="{{asset('backend/js/jquery.dataTables.min.js')}}"></script>
+	<script src="{{asset('backend/js/dataTables.bootstrap4.min.js')}}"></script>
+	<script src="{{asset('backend/js/bootstrap-colorpicker.min.js')}}"></script>
+	<script src="{{asset('backend/js/main.js')}}"></script>
 	<!-- popup message -->
-	<link rel="stylesheet" href="{{asset('public/backend/gritter/css/gritter/jquery.gritter.css')}}"/>
-	<script src="{{asset('public/backend/gritter/js/jquery.popupoverlay.js')}}"></script>
-	<script src="{{asset('public/backend/gritter/js/jquery.gritter.min.js')}}"></script>
-	<script src="{{asset('public/backend/gritter/js/popup_message.js')}}"></script>
+	<link rel="stylesheet" href="{{asset('backend/gritter/css/gritter/jquery.gritter.css')}}"/>
+	<script src="{{asset('backend/gritter/js/jquery.popupoverlay.js')}}"></script>
+	<script src="{{asset('backend/gritter/js/jquery.gritter.min.js')}}"></script>
+	<script src="{{asset('backend/gritter/js/popup_message.js')}}"></script>
 	<script type="text/javascript">
 	var langtext = {
 	   Edit : "{{ __('Edit') }}",

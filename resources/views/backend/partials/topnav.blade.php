@@ -7,7 +7,7 @@
 	<div class="dropdown ml-auto mt-2 mt-lg-0">
 		<a href="javascript:void(0);" class="my-profile-info" data-toggle="dropdown">
 			<div class="avatar">
-				<img src="{{ Auth::user()->image ? asset('public/media/'.Auth::user()->image) : asset('public/backend/images/avatar.jpg') }}" alt="avatar" />
+				<img src="{{ Auth::user()->image ? asset('media/'.Auth::user()->image) : asset('backend/images/avatar.jpg') }}" alt="avatar" />
 			</div>
 			<div class="my-profile">
 				<span>{{ Auth::user()->name }}</span>

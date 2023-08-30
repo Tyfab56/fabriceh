@@ -186,5 +186,5 @@
 @endsection
 
 @push('scripts')
-<script src="{{asset('public/backend/pages/langaugespage.js')}}"></script>
+<script src="{{asset('backend/pages/langaugespage.js')}}"></script>
 @endpush

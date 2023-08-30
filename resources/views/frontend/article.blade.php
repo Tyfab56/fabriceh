@@ -14,7 +14,7 @@ $SettingsData = gSettings();
 	<meta property="og:description" content="{{ $row->seo_desc }}" />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="{{ url()->current() }}" />
-	<meta property="og:image" content="{{ asset('public/media/'.$row->image) }}" />
+	<meta property="og:image" content="{{ asset('media/'.$row->image) }}" />
 	<meta property="og:image:width" content="600" />
 	<meta property="og:image:height" content="315" />
 	@if($SettingsData['metatag']->app_id != '')
@@ -28,7 +28,7 @@ $SettingsData = gSettings();
 	<meta name="twitter:url" content="{{ url()->current() }}">
 	<meta name="twitter:title" content="{{ $row->title }}">
 	<meta name="twitter:description" content="{{ $row->seo_desc }}">
-	<meta name="twitter:image" content="{{ asset('public/media/'.$row->image) }}">
+	<meta name="twitter:image" content="{{ asset('media/'.$row->image) }}">
 @endsection
 @endforeach
 
@@ -48,7 +48,7 @@ $SettingsData = gSettings();
 					<div class="col-md-8 offset-md-2">
 						<div class="blog-post blog-overlay">
 							<div class="thumbnail">
-								<img src="{{ asset('public/media/'.$row->image) }}" alt="image" />
+								<img src="{{ asset('media/'.$row->image) }}" alt="image" />
 							</div>
 						</div>
 						<div class="single-blog entry">
@@ -72,7 +72,7 @@ $SettingsData = gSettings();
 							<div class="col-12 col-sm-6 col-md-6 col-lg-6 grid-blog">
 								<div class="blog-post blog-overlay">
 									<div class="thumbnail">
-										<img src="{{ asset('public/media/'.$row->image) }}" alt="image" />
+										<img src="{{ asset('media/'.$row->image) }}" alt="image" />
 									</div>
 									<div class="blog-content">
 										<h2 class="blog-title">

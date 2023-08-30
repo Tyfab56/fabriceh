@@ -11,20 +11,20 @@ $SettingsData = gSettings();
 	<title>@yield('title')</title>
 	@yield('meta-content')
 	<!-- favicon icon -->
-	<link rel="shortcut icon" href="{{ $SettingsData['favicon'] ? asset('public/media/'.$SettingsData['favicon']) : asset('public/frontend/images/favicon.ico') }}" type="image/x-icon">
-	<link rel="icon" href="{{ $SettingsData['favicon'] ? asset('public/media/'.$SettingsData['favicon']) : asset('public/frontend/images/favicon.ico') }}" type="image/x-icon">
+	<link rel="shortcut icon" href="{{ $SettingsData['favicon'] ? asset('media/'.$SettingsData['favicon']) : asset('frontend/images/favicon.ico') }}" type="image/x-icon">
+	<link rel="icon" href="{{ $SettingsData['favicon'] ? asset('media/'.$SettingsData['favicon']) : asset('frontend/images/favicon.ico') }}" type="image/x-icon">
 	<!-- google fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
 	<!-- CSS -->
-	<link rel="stylesheet" href="{{asset('public/frontend/css/bootstrap.min.css')}}">
-	<link rel="stylesheet" href="{{asset('public/frontend/css/font-awesome.min.css')}}">
-	<link rel="stylesheet" href="{{asset('public/frontend/css/jquery.animatedheadline.css')}}">
-	<link rel="stylesheet" href="{{asset('public/frontend/css/normalize.min.css')}}">
-	<link rel="stylesheet" href="{{asset('public/frontend/css/animate.min.css')}}">
-	<link rel="stylesheet" href="{{asset('public/frontend/css/simplebar.css')}}"/>
-	<link rel="stylesheet" href="{{asset('public/frontend/css/lity.css')}}"/>
-	<link rel="stylesheet" href="{{asset('public/frontend/css/style.css')}}">
+	<link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" href="{{asset('frontend/css/jquery.animatedheadline.css')}}">
+	<link rel="stylesheet" href="{{asset('frontend/css/normalize.min.css')}}">
+	<link rel="stylesheet" href="{{asset('frontend/css/animate.min.css')}}">
+	<link rel="stylesheet" href="{{asset('frontend/css/simplebar.css')}}"/>
+	<link rel="stylesheet" href="{{asset('frontend/css/lity.css')}}"/>
+	<link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
 	<!-- Theme color change in settings menu -->
 	<style type="text/css">
 	body, .btn.black-btn, .resume-items .item .bullet, .tw-loader, .contact-form input, .contact-form textarea{background: {{$SettingsData['color']->theme_background_color}};}
@@ -71,31 +71,31 @@ $SettingsData = gSettings();
 	</div>
 
 <!-- JS -->
-<script src="{{asset('public/frontend/js/jquery-3.5.1.min.js')}}"></script>
-<script src="{{asset('public/frontend/js/popper.min.js')}}"></script>
-<script src="{{asset('public/frontend/js/bootstrap.min.js')}}"></script>
-<script src="{{asset('public/frontend/js/jquery.animatedheadline.min.js')}}"></script>
+<script src="{{asset('frontend/js/jquery-3.5.1.min.js')}}"></script>
+<script src="{{asset('frontend/js/popper.min.js')}}"></script>
+<script src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('frontend/js/jquery.animatedheadline.min.js')}}"></script>
 @if($SettingsData['home_page'] == 'particle_background')
-<script src="{{asset('public/frontend/js/particles.min.js')}}"></script>
-<script src="{{asset('public/frontend/js/app.js')}}"></script>
+<script src="{{asset('frontend/js/particles.min.js')}}"></script>
+<script src="{{asset('frontend/js/app.js')}}"></script>
 @elseif($SettingsData['home_page'] == 'video_background')
-<script src="{{asset('public/frontend/js/jarallax.min.js')}}"></script>
-<script src="{{asset('public/frontend/js/jarallax-video.min.js')}}"></script>
+<script src="{{asset('frontend/js/jarallax.min.js')}}"></script>
+<script src="{{asset('frontend/js/jarallax-video.min.js')}}"></script>
 @elseif($SettingsData['home_page'] == 'water_fade_background')
-<script src="{{asset('public/frontend/js/jquery.ripples-min.js')}}"></script>
+<script src="{{asset('frontend/js/jquery.ripples-min.js')}}"></script>
 @endif
-<script src="{{asset('public/frontend/js/animatedModal.min.js')}}"></script>
-<script src="{{asset('public/frontend/js/simplebar.min.js')}}"></script>
-<script src="{{asset('public/frontend/js/jquery.barfiller.js')}}"></script>
-<script src="{{asset('public/frontend/js/imagesloaded.pkgd.min.js')}}"></script>
-<script src="{{asset('public/frontend/js/isotope.pkgd.min.js')}}"></script>
-<script src="{{asset('public/frontend/js/lity.min.js')}}"></script>
-<script src="{{asset('public/frontend/js/parsley.min.js')}}"></script>
+<script src="{{asset('frontend/js/animatedModal.min.js')}}"></script>
+<script src="{{asset('frontend/js/simplebar.min.js')}}"></script>
+<script src="{{asset('frontend/js/jquery.barfiller.js')}}"></script>
+<script src="{{asset('frontend/js/imagesloaded.pkgd.min.js')}}"></script>
+<script src="{{asset('frontend/js/isotope.pkgd.min.js')}}"></script>
+<script src="{{asset('frontend/js/lity.min.js')}}"></script>
+<script src="{{asset('frontend/js/parsley.min.js')}}"></script>
 @if($SettingsData['recaptcha'] == 1)
 <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 @endif
 @stack('scripts')
-<script src="{{asset('public/frontend/js/main.js')}}"></script>
+<script src="{{asset('frontend/js/main.js')}}"></script>
 
 <script type="text/javascript">
 	let cookieModal = document.querySelector(".cookie_consent_card");

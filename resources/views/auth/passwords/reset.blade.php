@@ -17,7 +17,7 @@ $SettingsData = gSettings();
 				<div class="login text-center">
 					<div class="logo">
 						<a href="{{ route('login') }}">
-							<img src="{{ $SettingsData['back_logo'] ? asset('public/media/'.$SettingsData['back_logo']) : asset('public/backend/images/logo.png') }}">
+							<img src="{{ $SettingsData['back_logo'] ? asset('media/'.$SettingsData['back_logo']) : asset('backend/images/logo.png') }}">
 						</a>
 					</div>
 					<form method="POST" action="{{ route('password.update') }}">

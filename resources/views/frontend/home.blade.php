@@ -14,7 +14,7 @@ $SettingsData = gSettings();
 	<meta property="og:description" content="{{ $SettingsData['metatag']->description }}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{{ $SettingsData['metatag']->url }}" />
-	<meta property="og:image" content="{{ asset('public/media/'.$SettingsData['metatag']->cover_image) }}" />
+	<meta property="og:image" content="{{ asset('media/'.$SettingsData['metatag']->cover_image) }}" />
 	<meta property="og:image:width" content="600" />
 	<meta property="og:image:height" content="315" />
 	@if($SettingsData['metatag']->app_id != '')
@@ -28,14 +28,14 @@ $SettingsData = gSettings();
 	<meta name="twitter:url" content="{{ $SettingsData['metatag']->url }}">
 	<meta name="twitter:title" content="{{ $SettingsData['site_title'] }}">
 	<meta name="twitter:description" content="{{ $SettingsData['metatag']->description }}">
-	<meta name="twitter:image" content="{{ asset('public/media/'.$SettingsData['metatag']->cover_image) }}">
+	<meta name="twitter:image" content="{{ asset('media/'.$SettingsData['metatag']->cover_image) }}">
 @endsection
 
 @section('content')
 	<!--Navbar-->
 	<nav class="navbar-expand-md navbar fixed-top">
 		<a class="navbar-brand" href="{{ url('/') }}">
-			<img class="img-fluid" src="{{ $SettingsData['front_logo'] ? asset('public/media/'.$SettingsData['front_logo']) : asset('public/frontend/images/logo.png') }}" alt="logo"/>
+			<img class="img-fluid" src="{{ $SettingsData['front_logo'] ? asset('media/'.$SettingsData['front_logo']) : asset('frontend/images/logo.png') }}" alt="logo"/>
 		</a>
 		<span class="menu-toggler ml-auto" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" role="button">
 			<span class="line"></span>
@@ -53,21 +53,21 @@ $SettingsData = gSettings();
 	<!--/Navbar/-->
 	<!--Home Section-->
 	@if($SettingsData['home_page'] == 'image_background')
-	<section class="home-section home-screen home-overlay" style="background-image:url({{ $background_image ? asset('public/media/'.$background_image) : asset('public/frontend/images/home-bg.jpg') }});">
+	<section class="home-section home-screen home-overlay" style="background-image:url({{ $background_image ? asset('media/'.$background_image) : asset('frontend/images/home-bg.jpg') }});">
 	@elseif($SettingsData['home_page'] == 'particle_background')
-	<section class="home-section home-screen home-overlay" style="background-image:url({{ $background_image ? asset('public/media/'.$background_image) : asset('public/frontend/images/home-bg.jpg') }});">
+	<section class="home-section home-screen home-overlay" style="background-image:url({{ $background_image ? asset('media/'.$background_image) : asset('frontend/images/home-bg.jpg') }});">
 	<div id="particles-js"></div>
 	@elseif($SettingsData['home_page'] == 'video_background')
 	<section class="jarallax home-section home-screen home-overlay" data-jarallax-video="{{ $video_background ? $video_background : 'https://www.youtube.com/watch?v=Hot6gzJxF_I'}}">
 	@elseif($SettingsData['home_page'] == 'water_fade_background')
-	<section class="home-section home-screen home-overlay ripple" style="background-image:url({{ $background_image ? asset('public/media/'.$background_image) : asset('public/frontend/images/home-bg-1.jpg') }});">
+	<section class="home-section home-screen home-overlay ripple" style="background-image:url({{ $background_image ? asset('media/'.$background_image) : asset('frontend/images/home-bg-1.jpg') }});">
 	@endif
 		<div class="container h-100">
 			<div class="row h-100 align-items-center justify-content-center">
 				<div class="col-12 col-lg-12 text-center">
 					<div class="home-content">
 						<div class="avatar">
-							<img src="{{ $your_photo ? asset('public/media/'.$your_photo) : asset('public/frontend/images/avatar.jpg') }}" alt="image" />
+							<img src="{{ $your_photo ? asset('media/'.$your_photo) : asset('frontend/images/avatar.jpg') }}" alt="image" />
 						</div>
 						<h1>{{ $name }}</h1>
 						<h2 class="ah-headline clip">
@@ -114,7 +114,7 @@ $SettingsData = gSettings();
 				<div class="row">
 					<div class="col-12 col-md-5 col-lg-5">
 						<div class="info-image">
-							<img src="{{ $aboutdata->your_photo ? asset('public/media/'.$aboutdata->your_photo) : asset('public/frontend/images/about-me.jpg') }}" alt="image" />
+							<img src="{{ $aboutdata->your_photo ? asset('media/'.$aboutdata->your_photo) : asset('frontend/images/about-me.jpg') }}" alt="image" />
 						</div>
 					</div>
 					<div class="col-12 col-md-7 col-lg-7">
@@ -163,7 +163,7 @@ $SettingsData = gSettings();
 						<div class="row single-info-btn">
 							<div class="col-12 col-md-12">
 								@if($aboutdata->download_cv != '')
-								<a href="{{ asset('public/media/'.$aboutdata->download_cv) }}" class="btn black-btn margin-rb">{{ __('Download CV') }}</a>
+								<a href="{{ asset('media/'.$aboutdata->download_cv) }}" class="btn black-btn margin-rb">{{ __('Download CV') }}</a>
 								@endif
 								@if($aboutdata->hire_me != '')
 								<a href="{{ $aboutdata->hire_me }}" class="btn black-btn margin-rb">{{ __('Hire Me') }}</a>
@@ -254,17 +254,17 @@ $SettingsData = gSettings();
 						<div class="col-12 col-sm-6 col-md-6 col-lg-4 grid-item">
 							<div class="item-box">
 								<div class="item-img">
-									<img src="{{ asset('public/media/'.$row->image) }}" alt="image" />
+									<img src="{{ asset('media/'.$row->image) }}" alt="image" />
 								</div>
 								@if($row->url == '')
 								<div class="item-info">
-									<a href="{{ asset('public/media/'.$row->image) }}" data-lity><span class="fa fa-picture-o"></span></a>
+									<a href="{{ asset('media/'.$row->image) }}" data-lity><span class="fa fa-picture-o"></span></a>
 									<h3>{{ $row->title }}</h3>
 								</div>
 								@else
 								<div class="item-info">
 									<a href="{{ $row->url }}"><span class="fa fa-link"></span></a>
-									<a href="{{ asset('public/media/'.$row->image) }}" data-lity><span class="fa fa-picture-o"></span></a>
+									<a href="{{ asset('media/'.$row->image) }}" data-lity><span class="fa fa-picture-o"></span></a>
 									<h3><a href="{{ $row->url }}">{{ $row->title }}</a></h3>
 								</div>
 								@endif
@@ -292,7 +292,7 @@ $SettingsData = gSettings();
 					<div class="col-12 col-sm-6 col-md-6 col-lg-4 grid-blog">
 						<div class="blog-post blog-overlay">
 							<div class="thumbnail">
-								<img src="{{ asset('public/media/'.$row->image) }}" alt="image" />
+								<img src="{{ asset('media/'.$row->image) }}" alt="image" />
 							</div>
 							<div class="blog-content">
 								<h2 class="blog-title">

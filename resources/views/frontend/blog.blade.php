@@ -14,7 +14,7 @@ $SettingsData = gSettings();
 	<meta property="og:description" content="{{ $SettingsData['metatag']->description }}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{{ $SettingsData['metatag']->url }}" />
-	<meta property="og:image" content="{{ asset('public/media/'.$SettingsData['metatag']->cover_image) }}" />
+	<meta property="og:image" content="{{ asset('media/'.$SettingsData['metatag']->cover_image) }}" />
 	<meta property="og:image:width" content="600" />
 	<meta property="og:image:height" content="315" />
 	@if($SettingsData['metatag']->app_id != '')
@@ -28,7 +28,7 @@ $SettingsData = gSettings();
 	<meta name="twitter:url" content="{{ $SettingsData['metatag']->url }}">
 	<meta name="twitter:title" content="{{ $SettingsData['site_title'] }}">
 	<meta name="twitter:description" content="{{ $SettingsData['metatag']->description }}">
-	<meta name="twitter:image" content="{{ asset('public/media/'.$SettingsData['metatag']->cover_image) }}">
+	<meta name="twitter:image" content="{{ asset('media/'.$SettingsData['metatag']->cover_image) }}">
 @endsection
 
 @section('content')
@@ -46,7 +46,7 @@ $SettingsData = gSettings();
 					<div class="col-12 col-sm-6 col-md-6 col-lg-4 grid-blog">
 						<div class="blog-post blog-overlay">
 							<div class="thumbnail">
-								<img src="{{ asset('public/media/'.$row->image) }}" alt="image" />
+								<img src="{{ asset('media/'.$row->image) }}" alt="image" />
 							</div>
 							<div class="blog-content">
 								<h2 class="blog-title">

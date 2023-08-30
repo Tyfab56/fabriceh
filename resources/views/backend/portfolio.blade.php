@@ -118,5 +118,5 @@
 @endsection
 
 @push('scripts')
-<script src="{{asset('public/backend/pages/portfoliopage.js')}}"></script>
+<script src="{{asset('backend/pages/portfoliopage.js')}}"></script>
 @endpush

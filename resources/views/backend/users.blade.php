@@ -134,5 +134,5 @@
 @endsection
 
 @push('scripts')
-<script src="{{asset('public/backend/pages/users.js')}}"></script>
+<script src="{{asset('backend/pages/users.js')}}"></script>
 @endpush

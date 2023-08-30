@@ -37,7 +37,7 @@
 										<div class="tw-card">
 											<div class="tw-card-img">
 												<div id="image_background_select" class="tw-card-overlay HomepageVersion display-none"><i class="fa fa-check"></i></div>
-												<a onclick="onHomepageVersionAddEdit('image_background')" href="javascript:void(0);"><img src="{{asset('public/backend/images/home-1.jpg')}}" alt="" /></a>
+												<a onclick="onHomepageVersionAddEdit('image_background')" href="javascript:void(0);"><img src="{{asset('backend/images/home-1.jpg')}}" alt="" /></a>
 											</div>
 											<div class="tw-card-header"><a onclick="onHomepageVersionAddEdit('image_background')" href="javascript:void(0);">{{ __('Image Background') }}</a></div>
 										</div>
@@ -47,7 +47,7 @@
 											<div class="tw-card-img">
 												<div id="particle_background_select" class="tw-card-overlay HomepageVersion display-none"><i class="fa fa-check"></i></div>
 												<a onclick="onHomepageVersionAddEdit('particle_background')" href="javascript:void(0);">
-													<img src="{{asset('public/backend/images/home-2.jpg')}}" alt="" />
+													<img src="{{asset('backend/images/home-2.jpg')}}" alt="" />
 												</a>
 											</div>
 											<div class="tw-card-header"><a onclick="onHomepageVersionAddEdit('particle_background')" href="javascript:void(0);">{{ __('Particle Background') }}</a></div>
@@ -60,7 +60,7 @@
 											<div class="tw-card-img">
 												<div id="video_background_select" class="tw-card-overlay HomepageVersion display-none"><i class="fa fa-check"></i></div>
 												<a onclick="onHomepageVersionAddEdit('video_background')" href="javascript:void(0);">
-													<img src="{{asset('public/backend/images/home-3.jpg')}}" alt="" />
+													<img src="{{asset('backend/images/home-3.jpg')}}" alt="" />
 												</a>
 											</div>
 											<div class="tw-card-header"><a onclick="onHomepageVersionAddEdit('video_background')" href="javascript:void(0);">{{ __('Video Background') }}</a></div>
@@ -71,7 +71,7 @@
 											<div class="tw-card-img">
 												<div id="water_fade_background_select" class="tw-card-overlay HomepageVersion display-none"><i class="fa fa-check"></i></div>
 												<a onclick="onHomepageVersionAddEdit('water_fade_background')" href="javascript:void(0);">
-													<img src="{{asset('public/backend/images/home-4.jpg')}}" alt="" />
+													<img src="{{asset('backend/images/home-4.jpg')}}" alt="" />
 												</a>
 											</div>
 											<div class="tw-card-header"><a onclick="onHomepageVersionAddEdit('water_fade_background')" href="javascript:void(0);">{{ __('Water Fade Background') }}</a></div>
@@ -221,5 +221,5 @@
 @endsection
 
 @push('scripts')
-<script src="{{asset('public/backend/pages/homepage.js')}}"></script>
+<script src="{{asset('backend/pages/homepage.js')}}"></script>
 @endpush

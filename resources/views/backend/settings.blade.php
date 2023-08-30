@@ -533,5 +533,5 @@
 @endsection
 
 @push('scripts')
-<script src="{{asset('public/backend/pages/settingspage.js')}}"></script>
+<script src="{{asset('backend/pages/settingspage.js')}}"></script>
 @endpush
