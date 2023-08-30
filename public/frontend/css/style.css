@@ -318,6 +318,10 @@ button.cookie-consent__agree {
 .navbar .menu-toggler {
 	display: none;
 }
+.navbar .img-logo
+{
+	max-width: 200px;
+}
 
 /* ======================
    6. Section Heading
