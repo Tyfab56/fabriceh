@@ -61,8 +61,8 @@ $SettingsData = gSettings();
 			</div>						
 		</div>						
 	</div><!--/loader/-->
-    <!--Navbar-->
-<nav class="navbar-expand-md navbar fixed-top">
+   <!--Navbar-->
+	<nav class="navbar-expand-md navbar fixed-top">
 		<a class="navbar-brand" href="{{ url('/') }}">
 			<img class="img-logo" src="{{ $SettingsData['front_logo'] ? asset('media/'.$SettingsData['front_logo']) : asset('frontend/images/logo.png') }}" alt="logo"/>
 		</a>
@@ -81,6 +81,18 @@ $SettingsData = gSettings();
 	</nav>	
 
 	<!--/Navbar/-->
+	<!--Home Section-->
+	@if($SettingsData['home_page'] == 'image_background')
+	<section class="home-section home-screen home-overlay" style="background-image:url({{ $background_image ? asset('media/'.$background_image) : asset('frontend/images/home-bg.jpg') }});">
+	@elseif($SettingsData['home_page'] == 'particle_background')
+	<section class="home-section home-screen home-overlay" style="background-image:url({{ $background_image ? asset('media/'.$background_image) : asset('frontend/images/home-bg.jpg') }});">
+	<div id="particles-js"></div>
+	@elseif($SettingsData['home_page'] == 'video_background')
+	<section class="jarallax home-section home-screen home-overlay" data-jarallax-video="{{ $video_background ? $video_background : 'https://www.youtube.com/watch?v=Hot6gzJxF_I'}}">
+	@elseif($SettingsData['home_page'] == 'water_fade_background')
+	<section class="home-section home-screen home-overlay ripple" style="background-image:url({{ $background_image ? asset('media/'.$background_image) : asset('frontend/images/home-bg-1.jpg') }});">
+	@endif
+	
 	@yield('content')
 	
 	<div class="cookie_consent_card active">
