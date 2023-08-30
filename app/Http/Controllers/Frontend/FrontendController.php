@@ -32,6 +32,7 @@ class FrontendController extends Controller
 			$postContent = json_decode($home_post_content);
 			$data['name'] = $home_data->post_title;
 			$data['subtitle'] = $home_data->post_subtitle;
+			$data['btntext'] = $home_data->post_btntext;
 			$data['your_photo'] = $postContent->your_photo;
 			$data['background_image'] = $postContent->background_image;
 			$data['video_background'] = $postContent->video_background;
