@@ -73,8 +73,8 @@ $SettingsData = gSettings();
 						<h1>{{ $name }}</h1>
 						<h3>{{ $subtitle }}</h3>
 						@if($btntext != '')
-								<a href="{{ $btntext }}" class="btn black-btn margin-rb">{{ $btntext }}</a>
-								@endif
+								<a href="{{ $btntext }}" class="btn black-btn margin-rb mt-5">{{ $btntext }}</a>
+						@endif
 						<h2 class="ah-headline clip">
 							
 							<span class="ah-words-wrapper">

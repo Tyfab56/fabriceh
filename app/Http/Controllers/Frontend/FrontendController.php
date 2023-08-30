@@ -107,7 +107,13 @@ class FrontendController extends Controller
         return view('frontend.home', $data);
 		
     }
-	
+	// Get Another Data
+	public function another(){	
+		
+				return view('frontend.another');
+		
+    }
+
 	//Get Blog Data
     public function getBlogs(){	
 		$data['blog'] = DB::table('blogs')
