@@ -76,6 +76,7 @@ $SettingsData = gSettings();
 				<li class="nav-item"><a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a></li>
 				<li class="nav-item"><a class="nav-link" href="#about">{{ __('About') }}</a></li>
 				<li class="nav-item"><a class="nav-link" href="#portfolio">{{ __('Portfolio') }}</a></li>
+				<li class="nav-item"><a class="nav-link" href="{{ url('bwr') }}>{{ __('BWR') }}</a></li>
 				<li class="nav-item"><a class="nav-link" href="#blog">{{ __('Blog') }}</a></li>
 				<li class="nav-item"><a class="nav-link" href="#contact">{{ __('Contact') }}</a></li>
 			</ul>
