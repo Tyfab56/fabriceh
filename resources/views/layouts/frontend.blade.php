@@ -97,7 +97,7 @@ $SettingsData = gSettings();
 	@endif
 
 	@yield('content')
-	
+    <!--fermer la section dans le yield-->
 	<div class="cookie_consent_card active">
 		<span class="cookie_consent_text">Your experience on this site will be improved by allowing cookies.</span>
 		<button class="accept_btn">Allow Cookies</button>
