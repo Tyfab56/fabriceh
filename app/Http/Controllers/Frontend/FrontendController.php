@@ -113,7 +113,12 @@ class FrontendController extends Controller
 				return view('frontend.another');
 		
     }
+	// BWR
+	public function bwr(){	
+		
+		return view('frontend.bwr');
 
+}
 	//Get Blog Data
     public function getBlogs(){	
 		$data['blog'] = DB::table('blogs')
