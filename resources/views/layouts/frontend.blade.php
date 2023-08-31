@@ -1,6 +1,8 @@
 @php
 $SettingsData = gSettings();
 @endphp
+
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -92,7 +94,7 @@ $SettingsData = gSettings();
 	@elseif($SettingsData['home_page'] == 'water_fade_background')
 	<section class="home-section home-screen home-overlay ripple" style="background-image:url({{ $background_image ? asset('media/'.$background_image) : asset('frontend/images/home-bg-1.jpg') }});">
 	@endif
-	
+
 	@yield('content')
 	
 	<div class="cookie_consent_card active">
