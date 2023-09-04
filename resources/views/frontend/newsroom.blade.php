@@ -37,48 +37,55 @@ $SettingsData = gSettings();
 				<div class="col-12 col-lg-12 text-center">
 					<div class="home-content">
 					<div class="container">
-    <div class="row">
-        <!-- Box 1 -->
-        <div class="col-md-3">
-            <div class="card">
-                <img src="{{ asset('frontend/images/communique.png') }}" class="card-img-top img-fluid mx-auto pt-2" style="max-width: 100px;" alt="Image 1">
-                <div class="card-body">
-                    <p class="card-text">{{ __('NewsCommunique') }}</p>
-                </div>
-            </div>
-        </div>
+							<div class="row">
+								<!-- Box 1 -->
+								<div class="col-md-3">
+									<div class="card">
+										<img src="{{ asset('frontend/images/communique.png') }}" class="card-img-top img-fluid mx-auto pt-2" style="max-width: 100px;" alt="Image 1">
+										<div class="card-body">
+											<p class="card-text">{{ __('NewsCommunique') }}</p>
+										</div>
+									</div>
+								</div>
 
-        <!-- Box 2 -->
-        <div class="col-md-3">
-            <div class="card">
-                <img src="{{ asset('frontend/images/medias.png') }}" class="card-img-top img-fluid mx-auto pt-2" style="max-width: 100px;" alt="Image 2">
-                <div class="card-body">
-                    <p class="card-text">{{ __('NewsMedias') }}</p>
-                </div>
-            </div>
-        </div>
+								<!-- Box 2 -->
+								<div class="col-md-3">
+									<div class="card">
+										<img src="{{ asset('frontend/images/medias.png') }}" class="card-img-top img-fluid mx-auto pt-2" style="max-width: 100px;" alt="Image 2">
+										<div class="card-body">
+											<p class="card-text">{{ __('NewsMedias') }}</p>
+										</div>
+									</div>
+								</div>
 
-        <!-- Box 3 -->
-        <div class="col-md-3">
-            <div class="card">
-                <img src="{{ asset('frontend/images/articles.png') }}" class="card-img-top img-fluid mx-auto pt-2" style="max-width: 100px;" alt="Image 3">
-                <div class="card-body">
-                    <p class="card-text">{{ __('NewsArticle') }}</p>
-                </div>
-            </div>
-        </div>
+								<!-- Box 3 -->
+								<div class="col-md-3">
+									<div class="card">
+										<img src="{{ asset('frontend/images/articles.png') }}" class="card-img-top img-fluid mx-auto pt-2" style="max-width: 100px;" alt="Image 3">
+										<div class="card-body">
+											<p class="card-text">{{ __('NewsArticle') }}</p>
+										</div>
+									</div>
+								</div>
 
-        <!-- Box 4 -->
-        <div class="col-md-3">
-            <div class="card">
-                <img src="{{ asset('frontend/images/contact.png') }}" class="card-img-top img-fluid mx-auto pt-2" style="max-width: 100px;"  alt="Image 4">
-                <div class="card-body">
-                    <p class="card-text">{{ __('NewsContact') }}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+								<!-- Box 4 -->
+								<div class="col-md-3">
+									<div class="card">
+										<img src="{{ asset('frontend/images/contact.png') }}" class="card-img-top img-fluid mx-auto pt-2" style="max-width: 100px;"  alt="Image 4">
+										<div class="card-body">
+											<p class="card-text">{{ __('NewsContact') }}</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						@if ($id === "C")
+					
+						<p>La valeur de $id est "C".</p>
+					@else
+						
+						<p>La valeur de $id n'est pas "C".</p>
+					@endif
 
 					</div>
 				</div>

@@ -153,7 +153,11 @@ class FrontendController extends Controller
 }
 
 // BWR
-public function newsroom(){	
+public function newsroom($id){	
+	if ($id == '')
+	{
+		$id = "C";
+	}
 	$home_data = HomePageModel::getHomeContentbyCategory('home_content');
 	 if($home_data !=''){
 		$home_post_content = $home_data->post_content;
@@ -171,7 +175,7 @@ public function newsroom(){
 		$data['video_background'] = "";
 	}
 	
-	return view('frontend.newsroom',$data);
+	return view('frontend.newsroom',compact('data,id'));
 
 }
 	//Get Blog Data
