@@ -175,7 +175,7 @@ public function newsroom($id){
 		$data['video_background'] = "";
 	}
 	
-	return view('frontend.newsroom',compact('data,id'));
+	return view('frontend.newsroom',compact('data','id'));
 
 }
 	//Get Blog Data
