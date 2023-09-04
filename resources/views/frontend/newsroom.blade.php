@@ -41,7 +41,7 @@ $SettingsData = gSettings();
         <!-- Box 1 -->
         <div class="col-md-3">
             <div class="card">
-                <img src="{{ asset('frontend/images/communique.png') }}" class="card-img-top" alt="Image 1">
+                <img src="{{ asset('frontend/images/communique.png') }}" class="card-img-top img-fluid mx-auto" style="max-width: 100px;" alt="Image 1">
                 <div class="card-body">
                     <p class="card-text">{{ __('NewsCommunique') }}</p>
                 </div>
@@ -51,7 +51,7 @@ $SettingsData = gSettings();
         <!-- Box 2 -->
         <div class="col-md-3">
             <div class="card">
-                <img src="{{ asset('frontend/images/medias.png') }}" class="card-img-top" alt="Image 2">
+                <img src="{{ asset('frontend/images/medias.png') }}" class="card-img-top img-fluid mx-auto" style="max-width: 100px;" alt="Image 2">
                 <div class="card-body">
                     <p class="card-text">{{ __('NewsMedias') }}</p>
                 </div>
@@ -61,7 +61,7 @@ $SettingsData = gSettings();
         <!-- Box 3 -->
         <div class="col-md-3">
             <div class="card">
-                <img src="{{ asset('frontend/images/articles.png') }}" class="card-img-top" alt="Image 3">
+                <img src="{{ asset('frontend/images/articles.png') }}" class="card-img-top img-fluid mx-auto" style="max-width: 100px;" alt="Image 3">
                 <div class="card-body">
                     <p class="card-text">{{ __('NewsArticle') }}</p>
                 </div>
@@ -71,7 +71,7 @@ $SettingsData = gSettings();
         <!-- Box 4 -->
         <div class="col-md-3">
             <div class="card">
-                <img src="{{ asset('frontend/images/contact.png') }}" class="card-img-top" alt="Image 4">
+                <img src="{{ asset('frontend/images/contact.png') }}" class="card-img-top img-fluid mx-auto" style="max-width: 100px;"  alt="Image 4">
                 <div class="card-body">
                     <p class="card-text">{{ __('NewsContact') }}</p>
                 </div>
