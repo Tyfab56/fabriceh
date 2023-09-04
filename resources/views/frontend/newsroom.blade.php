@@ -41,9 +41,9 @@ $SettingsData = gSettings();
         <!-- Box 1 -->
         <div class="col-md-3">
             <div class="card">
-                <img src="votre-image-1.jpg" class="card-img-top" alt="Image 1">
+                <img src="{{ asset('frontend/images/communique.jpg') }}" class="card-img-top" alt="Image 1">
                 <div class="card-body">
-                    <p class="card-text">Texte pour la boîte 1.</p>
+                    <p class="card-text">{{ __('NewsCommunique') }}</p>
                 </div>
             </div>
         </div>
@@ -51,9 +51,9 @@ $SettingsData = gSettings();
         <!-- Box 2 -->
         <div class="col-md-3">
             <div class="card">
-                <img src="votre-image-2.jpg" class="card-img-top" alt="Image 2">
+                <img src="{{ asset('frontend/images/medias.jpg') }}" class="card-img-top" alt="Image 2">
                 <div class="card-body">
-                    <p class="card-text">Texte pour la boîte 2.</p>
+                    <p class="card-text">{{ __('NewsMedias') }}</p>
                 </div>
             </div>
         </div>
@@ -61,9 +61,9 @@ $SettingsData = gSettings();
         <!-- Box 3 -->
         <div class="col-md-3">
             <div class="card">
-                <img src="votre-image-3.jpg" class="card-img-top" alt="Image 3">
+                <img src="{{ asset('frontend/images/articles.jpg') }}" class="card-img-top" alt="Image 3">
                 <div class="card-body">
-                    <p class="card-text">Texte pour la boîte 3.</p>
+                    <p class="card-text">{{ __('NewsArticle') }}</p>
                 </div>
             </div>
         </div>
@@ -71,9 +71,9 @@ $SettingsData = gSettings();
         <!-- Box 4 -->
         <div class="col-md-3">
             <div class="card">
-                <img src="votre-image-4.jpg" class="card-img-top" alt="Image 4">
+                <img src="{{ asset('frontend/images/contact.jpg') }}" class="card-img-top" alt="Image 4">
                 <div class="card-body">
-                    <p class="card-text">Texte pour la boîte 4.</p>
+                    <p class="card-text">{{ __('NewsContact') }}</p>
                 </div>
             </div>
         </div>
