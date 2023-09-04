@@ -89,6 +89,8 @@ $SettingsData = gSettings();
 @endsection
 @push('scripts')
 <script type="text/javascript">
+var skill_barColor = "{{$SettingsData['color']->fill_color}}";
+var animatedColor = "{{$SettingsData['color']->theme_background_color}}";
 var home_page = "{{$SettingsData['home_page']}}";
 </script>
 @endpush
