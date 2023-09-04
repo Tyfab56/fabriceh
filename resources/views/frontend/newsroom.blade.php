@@ -92,5 +92,6 @@ $SettingsData = gSettings();
 var skill_barColor = "{{$SettingsData['color']->fill_color}}";
 var animatedColor = "{{$SettingsData['color']->theme_background_color}}";
 var home_page = "{{$SettingsData['home_page']}}";
+var skillsdata = '';
 </script>
 @endpush
