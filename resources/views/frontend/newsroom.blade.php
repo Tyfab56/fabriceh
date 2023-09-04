@@ -32,7 +32,7 @@ $SettingsData = gSettings();
 @endsection
 
 @section('content')
-<div class="container h-100">
+<div class="container h-100 newsroom">
 			<div class="row h-100 align-items-center justify-content-center">
 				<div class="col-12 col-lg-12 text-center">
 					<div class="home-content">

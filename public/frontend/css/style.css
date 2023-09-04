@@ -36,6 +36,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	box-sizing: border-box;
 }
 
+
+.newsroom .card {
+    /* Styles spécifiques à cette page */
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: background-color 0.3s ease;
+}
+
+.newsroom .card:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
 html, body {
 	height: 100%;
 	line-height: 170%;
