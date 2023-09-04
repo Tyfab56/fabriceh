@@ -36,7 +36,49 @@ $SettingsData = gSettings();
 			<div class="row h-100 align-items-center justify-content-center">
 				<div class="col-12 col-lg-12 text-center">
 					<div class="home-content">
-						
+					<div class="container">
+    <div class="row">
+        <!-- Box 1 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="votre-image-1.jpg" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                    <p class="card-text">Texte pour la boîte 1.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="votre-image-2.jpg" class="card-img-top" alt="Image 2">
+                <div class="card-body">
+                    <p class="card-text">Texte pour la boîte 2.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="votre-image-3.jpg" class="card-img-top" alt="Image 3">
+                <div class="card-body">
+                    <p class="card-text">Texte pour la boîte 3.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box 4 -->
+        <div class="col-md-3">
+            <div class="card">
+                <img src="votre-image-4.jpg" class="card-img-top" alt="Image 4">
+                <div class="card-body">
+                    <p class="card-text">Texte pour la boîte 4.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 					</div>
 				</div>
@@ -45,3 +87,8 @@ $SettingsData = gSettings();
 </section>
 
 @endsection
+@push('scripts')
+<script type="text/javascript">
+var home_page = "{{$SettingsData['home_page']}}";
+</script>
+@endpush
