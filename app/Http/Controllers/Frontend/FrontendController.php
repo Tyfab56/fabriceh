@@ -151,6 +151,29 @@ class FrontendController extends Controller
 		return view('frontend.bwr',$data);
 
 }
+
+// BWR
+public function newsroom(){	
+	$home_data = HomePageModel::getHomeContentbyCategory('home_content');
+	 if($home_data !=''){
+		$home_post_content = $home_data->post_content;
+		$postContent = json_decode($home_post_content);
+		$data['name'] = $home_data->post_title;
+		$data['subtitle'] = $home_data->post_subtitle;
+		$data['btntext'] = $home_data->post_btntext;
+		$data['your_photo'] = $postContent->your_photo;
+		$data['background_image'] = $postContent->background_image;
+		$data['video_background'] = $postContent->video_background;
+	}else{
+		$data['name'] = "Your Name";
+		$data['your_photo'] = "";
+		$data['background_image'] = "";
+		$data['video_background'] = "";
+	}
+	
+	return view('frontend.newsroom',$data);
+
+}
 	//Get Blog Data
     public function getBlogs(){	
 		$data['blog'] = DB::table('blogs')
