@@ -153,11 +153,8 @@ class FrontendController extends Controller
 }
 
 // BWR
-public function newsroom($id){	
-	if ($id == '')
-	{
-		$id = "C";
-	}
+public function newsroom($id ='C'){	
+	
 	$home_data = HomePageModel::getHomeContentbyCategory('home_content');
 	 if($home_data !=''){
 		$home_post_content = $home_data->post_content;
