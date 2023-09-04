@@ -369,7 +369,7 @@ button.cookie-consent__agree {
 	background-attachment: fixed;
 	background-size: cover;
 	height: 100vh;
-	padding: 0;
+	/*padding: 0;*/
 	position:relative;
 }
 .home-overlay::before {
