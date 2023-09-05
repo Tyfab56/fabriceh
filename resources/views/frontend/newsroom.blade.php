@@ -81,7 +81,14 @@ $SettingsData = gSettings();
 						</div>
 						@if ($id === "C")
 					
-						<p>La valeur de $id est "C".</p>
+						@foreach ($pressReleases as $pressRelease)
+							<div class="press-release">
+								<h2>{{ $pressRelease->title }}</h2>
+								<p>{{ $pressRelease->description }}</p>
+								<p>Langue : {{ $pressRelease->language }}</p>
+								<a href="{{ asset($pressRelease->pdf_path) }}" target="_blank">Télécharger le PDF</a>
+							</div>
+						@endforeach
 					@else
 						
 						<p>La valeur de $id n'est pas "C".</p>

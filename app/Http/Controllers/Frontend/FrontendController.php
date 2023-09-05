@@ -12,6 +12,7 @@ use App\Portfolio;
 use App\Blog;
 use App\ContactPageModel;
 use App\Setting;
+use App\PressRelease;
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -173,6 +174,8 @@ public function newsroom($id = "C"){
 	}
 	
 	$data['id'] = $id;
+
+	$data['pressReleases'] = PressRelease::orderBy('created_at', 'desc')->get();
 	return view('frontend.newsroom',$data);
 
 }
