@@ -64,7 +64,7 @@ $SettingsData = gSettings();
 		</div>						
 	</div><!--/loader/-->
    <!--Navbar-->
-	<nav class="navbar-expand-md navbar fixed-top">
+	<nav class="navbar-expand-md navbar fixed-top navbar-fixed">
 		<a class="navbar-brand" href="{{ url('/') }}">
 			<img class="img-logo" src="{{ $SettingsData['front_logo'] ? asset('media/'.$SettingsData['front_logo']) : asset('frontend/images/logo.png') }}" alt="logo"/>
 		</a>
