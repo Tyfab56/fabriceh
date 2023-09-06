@@ -132,7 +132,28 @@
 									<a onclick="onFormPanel(1)" href="javascript:void(0);" class="btn green-btn btn-form float-right"><i class="fa fa-plus"></i> {{ __('Add New') }}</a>
 									<a onclick="onListPanel(1)" href="javascript:void(0);" class="btn warning-btn btn-list float-right display-none"><i class="fa fa-reply"></i> {{ __('Back to List') }}</a>
 								</div>
-							</div>			
+							</div>		
+							<!--Data grid-->
+							<div id="list-panel-tabid-2">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="table-responsive">
+												<table id="DataTable_ImagesId" class="table table-striped table-bordered">
+													<thead>
+														<tr>
+															<th class="text-center">{{ __('SL.') }}</th>
+															<th class="text-left">{{ __('Name') }}</th>
+															<th class="text-left">{{ __('Email') }}</th>
+															<th class="text-center">{{ __('Action') }}</th>
+														</tr>
+													</thead>
+													<tbody></tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--/Data grid-->	
 						</div>
 					</div>
 				</div>
