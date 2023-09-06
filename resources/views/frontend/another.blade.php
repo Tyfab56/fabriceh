@@ -35,7 +35,7 @@ $SettingsData = gSettings();
 <div class="row gy-4 justify-content-center inherited-styles-for-exported-element">
   <div class="col-xl-3 col-lg-4 col-md-6">
     <div class="gallery-item h-100">
-      <img src="https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-1.jpg" class="img-fluid" alt="">
+      <img src="{asset('frontend/images/First_rays_Langjisor-1435-square.jpg') }}" class="img-fluid" alt="">
       <div class="gallery-links d-flex align-items-center justify-content-center">
         <a href="https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-1.jpg" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
         <a href="https://bootstrapmade.com/demo/templates/PhotoFolio/gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
