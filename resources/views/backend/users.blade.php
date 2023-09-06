@@ -26,7 +26,7 @@
 					<div class="card-body tabs-area p-0">
 						<ul class="tabs-nav">
 							<li><a data-tabid="1" class="link-tab active" href="javascript:void(0);"><i class="fa fa-minus"></i>{{ __('Users') }}</a></li>
-							<li><a data-tabid="2" class="link-tab active" href="javascript:void(0);"><i class="fa fa-minus"></i>{{ __('Users') }}</a></li>
+							<li><a data-tabid="2" class="link-tab active" href="javascript:void(0);"><i class="fa fa-minus"></i>{{ __('Images') }}</a></li>
 						</ul>
 						<div class="tabs-body">
 							<div id="tabId-1" class="tab-link-content tabshow">
@@ -126,6 +126,13 @@
 								</div>
 								<!--/Data Entry Form/-->
 							</div>
+							<div id="tabId-2" class="tab-link-content tabshow">
+							<div class="tabs-head">
+									<h4>{{ __('Images') }}</h4>
+									<a onclick="onFormPanel(1)" href="javascript:void(0);" class="btn green-btn btn-form float-right"><i class="fa fa-plus"></i> {{ __('Add New') }}</a>
+									<a onclick="onListPanel(1)" href="javascript:void(0);" class="btn warning-btn btn-list float-right display-none"><i class="fa fa-reply"></i> {{ __('Back to List') }}</a>
+								</div>
+							</div>			
 						</div>
 					</div>
 				</div>
