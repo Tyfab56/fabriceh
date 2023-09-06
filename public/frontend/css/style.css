@@ -37,15 +37,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 
-.newsroom .card {
-    /* Styles spécifiques à cette page */
-    background-color: rgba(255, 255, 255, 0.7);
-    transition: background-color 0.3s ease;
-}
 
-.newsroom .card:hover {
-    background-color: rgba(255, 255, 255, 1);
-}
 
 html, body {
 	height: 100%;
@@ -1159,8 +1151,17 @@ ul.social-icons li a {
 		font-size: 22px;
 	}
 }
+.newsroom .card {
+    /* Styles spécifiques à cette page */
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: background-color 0.3s ease;
+}
 
-.news-communique
+.newsroom .card:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.newsroom .news-communique
 {
 	background-color: white; 
 	margin-top: 20px;
