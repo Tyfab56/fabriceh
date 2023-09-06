@@ -315,7 +315,7 @@ $SettingsData = gSettings();
   }
 
   .gallery-item:hover .gallery-links {
-    opacity: 1;
+    opacity: 0.3;
   }
 
   .gallery-item:hover .details-link, .gallery-item:hover .preview-link {
