@@ -354,7 +354,7 @@ $SettingsData = gSettings();
   color: #fff;
   font-size: 18px;
   text-align: center;
-  padding-top: 50%; /* Centrez le texte verticalement */
+  padding-top: 20px; /* Centrez le texte verticalement */
   opacity: 0; /* Masquer le titre avec une opacité de 0 */
   transition: opacity 0.3s ease-in-out; /* Transition en douceur de l'opacité */
 }
