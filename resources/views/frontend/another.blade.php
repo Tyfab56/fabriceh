@@ -36,6 +36,7 @@ $SettingsData = gSettings();
   <div class="col-xl-3 col-lg-4 col-md-6">
     <div class="gallery-item h-100">
       <img src="{{ asset('frontend/images/First_rays_Langjisor-1435-square.jpg') }}" class="img-fluid" alt="">
+      <div class="gallery-title">Titre de l'image</div> 
       <div class="gallery-links d-flex align-items-center justify-content-center">
         <a href="https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-1.jpg" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
         <a href="https://bootstrapmade.com/demo/templates/PhotoFolio/gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -342,5 +343,26 @@ $SettingsData = gSettings();
     font-family: bootstrap-icons !important;
     font-weight: 400 !important;
   }
+  .gallery-title {
+  display: none; /* Cacher le titre initialement */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour le titre */
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 50%; /* Centrez le texte verticalement */
+  opacity: 0; /* Masquer le titre avec une opacité de 0 */
+  transition: opacity 0.3s ease-in-out; /* Transition en douceur de l'opacité */
+}
+
+.gallery-item:hover .gallery-title {
+  display: block; /* Afficher le titre lorsqu'il est survolé */
+  opacity: 1; /* Rendre le titre complètement visible */
+  transform: translateY(-50%); /* Effet d'apparition depuis le haut */
+}
 </style>
 @endsection
