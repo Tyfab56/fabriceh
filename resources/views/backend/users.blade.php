@@ -132,11 +132,11 @@
 							<div id="tabId-2" class="tab-link-content tabshow">
 								<div class="tabs-head">
 									<h4>{{ __('Users') }}</h4>
-									<a onclick="onFormPanel(1)" href="javascript:void(0);" class="btn green-btn btn-form float-right"><i class="fa fa-plus"></i> {{ __('Add New') }}</a>
-									<a onclick="onListPanel(1)" href="javascript:void(0);" class="btn warning-btn btn-list float-right display-none"><i class="fa fa-reply"></i> {{ __('Back to List') }}</a>
+									<a onclick="onFormPanel(2)" href="javascript:void(0);" class="btn green-btn btn-form float-right"><i class="fa fa-plus"></i> {{ __('Add New') }}</a>
+									<a onclick="onListPanel(2)" href="javascript:void(0);" class="btn warning-btn btn-list float-right display-none"><i class="fa fa-reply"></i> {{ __('Back to List') }}</a>
 								</div>
 								<!--Data grid-->
-								<div id="list-panel-tabid-1">
+								<div id="list-panel-tabid-2">
 									<div class="row">
 										<div class="col-lg-12">
 											<div class="table-responsive">
@@ -145,7 +145,7 @@
 														<tr>
 															<th class="text-center">{{ __('backend.Titre') }}</th>
 															<th class="text-left">{{ __('backend.Description') }}</th>
-															<th class="text-left">{{ __('backend.Fichier) }}</th>
+															<th class="text-left">{{ __('backend.Fichier') }}</th>
 															<th class="text-center">{{ __('Action') }}</th>
 														</tr>
 													</thead>
@@ -157,7 +157,7 @@
 								</div>
 								<!--/Data grid-->
 								<!--Data Entry Form-->
-								<div id="form-panel-tabid-1" class="display-none">
+								<div id="form-panel-tabid-2" class="display-none">
 									<form novalidate="" data-validate="parsley" id="DataEntry_formId_1">
 										<div class="row">
 											<div class="col-md-12">
@@ -219,7 +219,7 @@
 											<input id="UserById" type="text" class="display-none" value="{{ route('backend.getUserById') }}"/>
 											<input id="deleteUserId" type="text" class="display-none" value="{{ route('backend.deleteUser') }}"/>
 											
-											<a data-submitformid="1" class="btn green-btn mr-10 submit-form-class" href="javascript:void(0);">{{ __('Save') }}</a>
+											<a data-submitformid="2" class="btn green-btn mr-10 submit-form-class" href="javascript:void(0);">{{ __('Save') }}</a>
 											<a onClick="onListPanel(1)" class="btn danger-btn btn-list" href="javascript:void(0);">{{ __('Cancel') }}</a>
 										</div>
 									</form>
