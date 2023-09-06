@@ -27,7 +27,14 @@ Route::post('/sentContactFormMessage', 'Frontend\FrontendController@sentContactF
 Auth::routes();
 
 Route::prefix('backend')->group(function(){
-	
+	// Images
+	Route::get('/images', 'Backend\ImageController@index')->middleware('auth');;
+	Route::get('/images/create', 'Backend\ImageController@create')->middleware('auth');;
+	Route::post('//images', 'Backend\ImageController@store')->middleware('auth');;
+	Route::get('/images/{id}/edit', 'Backend\ImageController@edit')->middleware('auth');;
+	Route::put('/images/{id}', 'Backend\ImageController@update')->middleware('auth');;
+	Route::delete('/images/{id}', 'Backend\ImageController@destroy')->middleware('auth');;
+
 	//Home Page
 	Route::get('/home','Backend\HomePageController@homePage')->name('backend.home')->middleware('auth');
 	
