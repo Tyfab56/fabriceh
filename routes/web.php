@@ -18,7 +18,7 @@ Route::get('/','Frontend\FrontendController@index')->name('frontend.home');
 Route::get('/blog','Frontend\FrontendController@getBlogs')->name('frontend.blog');
 Route::get('/another','Frontend\FrontendController@another')->name('frontend.another');
 Route::get('/bwr','Frontend\FrontendController@bwr')->name('frontend.bwr');
-Route::get('/newsroom/{id?}','Frontend\FrontendController@newsroom')->name('frontend.newroom');
+Route::get('/newsroom/{id?}','Frontend\FrontendController@newsroom')->name('frontend.newsroom');
 
 Route::get('/article/{id}/{title}','Frontend\FrontendController@getArticle')->name('frontend.article');
 
