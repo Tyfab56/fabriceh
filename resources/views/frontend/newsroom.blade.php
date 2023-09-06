@@ -40,22 +40,26 @@ $SettingsData = gSettings();
 							<div class="row">
 								<!-- Box 1 -->
 								<div class="col-md-3">
+								<a href="{{ route('frontend.newsroom', ['id' => 'C']) }}" class="card-link">
 									<div class="card">
 										<img src="{{ asset('frontend/images/communique.png') }}" class="card-img-top img-fluid mx-auto pt-2" style="max-width: 100px;" alt="Image 1">
 										<div class="card-body">
 											<p class="card-text">{{ __('NewsCommunique') }}</p>
 										</div>
 									</div>
+									</a>
 								</div>
 
 								<!-- Box 2 -->
 								<div class="col-md-3">
+								<a href="{{ route('frontend.newsroom', ['id' => 'M']) }}" class="card-link">
 									<div class="card">
 										<img src="{{ asset('frontend/images/medias.png') }}" class="card-img-top img-fluid mx-auto pt-2" style="max-width: 100px;" alt="Image 2">
 										<div class="card-body">
 											<p class="card-text">{{ __('NewsMedias') }}</p>
 										</div>
 									</div>
+								</a>
 								</div>
 
 								<!-- Box 3 -->
@@ -88,6 +92,8 @@ $SettingsData = gSettings();
 								<p>Langue : {{ $pressRelease->language }}</p>
 								<a href="{{ asset($pressRelease->pdf_path) }}" target="_blank">Télécharger le PDF</a>
 							</div>
+
+							
 						@endforeach
 					@else
 						
