@@ -85,63 +85,28 @@ $SettingsData = gSettings();
 						</div>
 						@if ($id === "C")
 
-
-
-
 						<div class="card news-communique">
                             <div class="card-body">
-                                <h4 class="card-title">Products For Approval</h4>
-                                <h5 class="card-subtitle">Here is the list of products waiting for approval</h5>
+                                <h4 class="card-title">{{ __('NewsCommunique') }}</h4>
+                                <h5 class="card-subtitle">{{ __('NewsCommuniqueDetail') }}</h5>
+								@foreach ($pressReleases as $pressRelease)
                                 <div class="product d-flex align-items-center p-t-20 p-b-20 border-bottom">
                                     <img class="product-image m-r-20" alt="" src="../assets/images/product/2.png">
                                     <div class="product-detail">
-                                        <h5 class="font-bold">Apple iphone6 plus</h5>
-                                        <span class="font-15 text-muted">Submitted for approval on 5 April 2017</span>
-                                        <h4 class="font-20 font-bold text-info m-t-30">$699.99</h4>
+                                        <h5 class="font-bold">{{ $pressRelease->title }}</h5>
+                                        <span class="font-15 text-muted">{{ $pressRelease->description }}</span>
+                                        <h4 class="font-20 font-bold text-info m-t-30">{{ $pressRelease->language }}</h4>
                                     </div>
                                     <div class="product-action ml-auto m-b-5 align-self-end">
-                                        <button class="btn btn-success">Approve</button>
+                                        <button class="btn btn-success">{{ $pressRelease->created_at }}</button>
                                         <button class="btn btn-outline-secondary">Decline</button>
                                     </div>
                                 </div>
-                                <div class="product d-flex align-items-center p-t-20 p-b-20 border-bottom">
-                                    <img class="product-image m-r-20" alt="" src="../assets/images/product/2.png">
-                                    <div class="product-detail">
-                                        <h5 class="font-bold">New! Apple-iwatch Nike+ 42mm space gray</h5>
-                                        <span class="font-15 text-muted">Approved on 1 April 2017</span>
-                                        <h4 class="font-20 font-bold text-info m-t-30">$250.00</h4>
-                                    </div>
-                                    <div class="product-action ml-auto m-b-5 align-self-end">
-                                        <button class="btn btn-outline-secondary"><i class="mdi mdi-check text-success m-r-10 font-14"></i>Approved</button>
-                                    </div>
-                                </div>
-                                <div class="product d-flex align-items-center p-t-20">
-                                    <img class="product-image m-r-20" alt="" src="../assets/images/product/1.png">
-                                    <div class="product-detail">
-                                        <h4 class="font-bold">New! Apple-ipad silver black 128gb</h4>
-                                        <span class="font-15 text-muted">Declined on 1 April 2017</span>
-                                        <h4 class="font-20 font-bold text-info m-t-30">$329.78</h4>
-                                    </div>
-                                    <div class="product-action ml-auto m-b-5 align-self-end">
-                                        <button class="btn btn-outline-secondary"><i class="mdi mdi-close text-danger m-r-10 font-14"></i>Declined</button>
-                                    </div>
-                                </div>
+								@endforeach 
+                             
                             </div>
-                        </div>
-
-
-
-					
-						@foreach ($pressReleases as $pressRelease)
-							<div class="press-release">
-								<h2>{{ $pressRelease->title }}</h2>
-								<p>{{ $pressRelease->description }}</p>
-								<p>Langue : {{ $pressRelease->language }}</p>
-								<a href="{{ asset($pressRelease->pdf_path) }}" target="_blank">Télécharger le PDF</a>
-							</div>
-  
-							
-						@endforeach
+                        </div		
+				
 					@else
 						
 						<p>La valeur de $id n'est pas "C".</p>

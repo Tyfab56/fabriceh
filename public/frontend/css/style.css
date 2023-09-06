@@ -1171,3 +1171,11 @@ ul.social-icons li a {
     line-height: 1.5;
     text-align: left;
 }
+
+.newsroom .card h4 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px 0px;
+    letter-spacing: 2px;
+    color: #bcb8b8;
+}
