@@ -13,6 +13,7 @@ use App\Blog;
 use App\ContactPageModel;
 use App\Setting;
 use App\PressRelease;
+use App\Collection;
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
