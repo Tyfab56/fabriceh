@@ -269,7 +269,7 @@ $SettingsData = gSettings();
   }
 
   .gallery-links {
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .3);
     bottom: 0;
     left: 0;
     position: absolute;
