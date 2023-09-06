@@ -32,5 +32,34 @@ $SettingsData = gSettings();
 @endsection
 
 @section('content')
-
+<div class="row gy-4 justify-content-center inherited-styles-for-exported-element">
+<div class="col-xl-3 col-lg-4 col-md-6">
+</div><!-- End Gallery Item -->
+<div class="col-xl-3 col-lg-4 col-md-6">
+</div><!-- End Gallery Item -->
+<div class="col-xl-3 col-lg-4 col-md-6">
+</div><!-- End Gallery Item -->
+<div class="col-xl-3 col-lg-4 col-md-6">
+</div><!-- End Gallery Item -->
+<div class="col-xl-3 col-lg-4 col-md-6">
+</div><!-- End Gallery Item -->
+<div class="col-xl-3 col-lg-4 col-md-6">
+</div><!-- End Gallery Item -->
+<div class="col-xl-3 col-lg-4 col-md-6">
+</div><!-- End Gallery Item -->
+<div class="col-xl-3 col-lg-4 col-md-6">
+</div><!-- End Gallery Item -->
+<div class="col-xl-3 col-lg-4 col-md-6">
+</div><!-- End Gallery Item -->
+<div class="col-xl-3 col-lg-4 col-md-6">
+</div><!-- End Gallery Item -->
+<div class="col-xl-3 col-lg-4 col-md-6">
+</div><!-- End Gallery Item -->
+<div class="col-xl-3 col-lg-4 col-md-6">
+</div><!-- End Gallery Item -->
+<div class="col-xl-3 col-lg-4 col-md-6">
+</div><!-- End Gallery Item -->
+<div class="col-xl-3 col-lg-4 col-md-6">
+</div><!-- End Gallery Item -->
+<div class="col-xl-3 col-lg-4 col-md-6">
 @endsection
