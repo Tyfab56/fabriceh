@@ -90,9 +90,9 @@ $SettingsData = gSettings();
                                 <h4 class="card-title">{{ __('NewsCommunique') }}</h4>
                                 <h5 class="card-subtitle">{{ __('NewsCommuniqueDetail') }}</h5>
 								@foreach ($pressReleases as $pressRelease)
-                                <div class="product d-flex align-items-center p-t-20 p-b-20 border-bottom">
-                                    <img class="product-image m-r-20" alt="" src="../assets/images/product/2.png">
-                                    <div class="product-detail">
+                                <div class="d-flex align-items-center pt-5 pb-5 border-bottom border-top">
+                                    
+                                    <div class="news-detail">
                                         <h5 class="font-bold">{{ $pressRelease->title }}</h5>
                                         <span class="font-15 text-muted">{{ $pressRelease->description }}</span>
                                         <h4 class="font-20 font-bold text-info m-t-30">{{ $pressRelease->language }}</h4>
