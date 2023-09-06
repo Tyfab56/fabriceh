@@ -88,7 +88,7 @@ $SettingsData = gSettings();
 
 
 
-						<div class="card product-widget">
+						<div class="card news-communique">
                             <div class="card-body">
                                 <h4 class="card-title">Products For Approval</h4>
                                 <h5 class="card-subtitle">Here is the list of products waiting for approval</h5>
