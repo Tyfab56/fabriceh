@@ -26,6 +26,7 @@
 					<div class="card-body tabs-area p-0">
 						<ul class="tabs-nav">
 							<li><a data-tabid="1" class="link-tab active" href="javascript:void(0);"><i class="fa fa-minus"></i>{{ __('Users') }}</a></li>
+							<li><a data-tabid="2" class="link-tab active" href="javascript:void(0);"><i class="fa fa-minus"></i>{{ __('Users') }}</a></li>
 						</ul>
 						<div class="tabs-body">
 							<div id="tabId-1" class="tab-link-content tabshow">
