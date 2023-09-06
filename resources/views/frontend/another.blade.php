@@ -350,18 +350,17 @@ $SettingsData = gSettings();
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour le titre */
   color: #fff;
   font-size: 18px;
   text-align: center;
-  padding-top: 20px; /* Centrez le texte verticalement */
+  padding-top: 50%; /* Centrez le texte verticalement */
   opacity: 0; /* Masquer le titre avec une opacité de 0 */
   transition: opacity 0.3s ease-in-out; /* Transition en douceur de l'opacité */
 }
 
 .gallery-item:hover .gallery-title {
   display: block; /* Afficher le titre lorsqu'il est survolé */
-  opacity: 1; /* Rendre le titre complètement visible */
+  opacity: 0.9; /* Rendre le titre complètement visible */
   transform: translateY(-50%); /* Effet d'apparition depuis le haut */
 }
 </style>
