@@ -1162,6 +1162,8 @@ ul.social-icons li a {
 
 .news-communique
 {
+	background-color: white; 
+	margin-top: 20px;
 	color: #3e5569;
     font-size: .875rem;
     font-weight: 400;
