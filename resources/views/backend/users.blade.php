@@ -141,9 +141,9 @@
 												<table id="DataTable_ImagesId" class="table table-striped table-bordered">
 													<thead>
 														<tr>
-															<th class="text-center">{{ __('SL.') }}</th>
-															<th class="text-left">{{ __('Name') }}</th>
-															<th class="text-left">{{ __('Email') }}</th>
+															<th class="text-center">{{__('backend.Titre')}}</th>
+															<th class="text-left">{{__('backend.Description')}}</th>
+															<th class="text-left">{{__('backend.Fichier')}}/th>
 															<th class="text-center">{{ __('Action') }}</th>
 														</tr>
 													</thead>
