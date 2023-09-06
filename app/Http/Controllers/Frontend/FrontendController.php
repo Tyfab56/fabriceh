@@ -109,7 +109,7 @@ class FrontendController extends Controller
 		
     }
 	// Get Another Data
-	public function another(){	
+	public function another($id = "1"){	
 		$home_data = HomePageModel::getHomeContentbyCategory('home_content');
 	 	if($home_data !=''){
 			$home_post_content = $home_data->post_content;
@@ -126,8 +126,11 @@ class FrontendController extends Controller
 			$data['background_image'] = "";
 			$data['video_background'] = "";
 		}
-		
-				return view('frontend.another',$data);
+		// recuperation des images
+		$collection = Collection::findOrFail($id);
+        $images = $collection->images;
+		$data['images'] = $images;
+		return view('frontend.another',$data);
 		
     }
 	// BWR

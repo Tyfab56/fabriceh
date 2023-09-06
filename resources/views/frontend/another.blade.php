@@ -33,6 +33,18 @@ $SettingsData = gSettings();
 
 @section('content')
 <div class="row gy-4 justify-content-center inherited-styles-for-exported-element">
+@foreach ($images as $image)
+<div class="col-xl-3 col-lg-4 col-md-6">
+    <div class="gallery-item h-100">
+      <img src="{{ asset('frontend/images/'. $image->fichier) }}" class="img-fluid" alt="">
+      <div class="gallery-title">{{ $image->titre }}</div> 
+      <div class="gallery-links d-flex align-items-center justify-content-center">
+        <a href="https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-1.jpg" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+        <a href="https://bootstrapmade.com/demo/templates/PhotoFolio/gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+      </div>
+    </div>
+  </div><!-- End Gallery Item -->
+@endforeach
   <div class="col-xl-3 col-lg-4 col-md-6">
     <div class="gallery-item h-100">
       <img src="{{ asset('frontend/images/First_rays_Langjisor-1435-square.jpg') }}" class="img-fluid" alt="">
@@ -353,9 +365,10 @@ $SettingsData = gSettings();
   color: #fff;
   font-size: 18px;
   text-align: center;
+  margin-top: 20px;
   padding-top: 50%; /* Centrez le texte verticalement */
   opacity: 0; /* Masquer le titre avec une opacité de 0 */
-  transition: opacity 0.3s ease-in-out; /* Transition en douceur de l'opacité */
+  transition: opacity 0.5s ease-in-out; /* Transition en douceur de l'opacité */
 }
 
 .gallery-item:hover .gallery-title {
