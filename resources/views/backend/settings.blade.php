@@ -33,6 +33,7 @@
 							<li><a data-tabid="6" class="link-tab" href="javascript:void(0);"><i class="fa fa-minus"></i>{{ __('Google reCAPTCHA') }}</a></li>
 							<li><a data-tabid="7" class="link-tab" href="javascript:void(0);"><i class="fa fa-minus"></i>{{ __('Contact Form Setting') }}</a></li>
 							<li><a data-tabid="8" class="link-tab" href="javascript:void(0);"><i class="fa fa-minus"></i>{{ __('Google Map') }}</a></li>
+							<li><a data-tabid="9" class="link-tab" href="javascript:void(0);"><i class="fa fa-minus"></i>Tets</a></li>
 						</ul>
 						<div class="tabs-body">
 							<!--Route for Settings Table Data-->
@@ -523,6 +524,57 @@
 								</form>
 							</div>
 							<!--/Google Map/-->
+							<div id="tabId-9" class="tab-link-content tabhide">
+								<form novalidate="" data-validate="parsley" id="DataEntry_formId_9">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="tw_checkbox checkbox_group">
+														<input id="is_gmap" name="is_gmap" type="checkbox">
+														<label for="is_gmap">{{ __('Enable/Disable') }}</label>
+														<span></span>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12">
+													<div class="form-group">
+														<label for="api_key"><span class="red">*</span> {{ __('API Key') }}</label>
+														<input type="text" name="api_key" id="api_key" class="form-control parsley-validated" data-required="true">
+														<small class="form-text text-muted"><a target="_blank" href="https://developers.google.com/maps/documentation/javascript/get-api-key">Get an Google Map API Key</a></small>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-4">
+													<div class="form-group">
+														<label for="Latitude"><span class="red">*</span> {{ __('Latitude') }}</label>
+														<input type="text" name="Latitude" id="Latitude" class="form-control parsley-validated" data-required="true">
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="form-group">
+														<label for="Longitude"><span class="red">*</span> {{ __('Longitude') }}</label>
+														<input type="text" name="Longitude" id="Longitude" class="form-control parsley-validated" data-required="true">
+													</div>
+												</div>
+												<div class="col-md-4">
+													<div class="form-group">
+														<label for="zoom"><span class="red">*</span> {{ __('Zoom') }}</label>
+														<input type="text" name="zoom" id="zoom" class="form-control parsley-validated" data-required="true">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tabs-footer">
+										<!--route-->
+										<input id="saveGoogleMapId" type="text" class="display-none" value="{{ route('backend.saveGoogleMap') }}"/>
+										<a data-submitformid="8" class="btn green-btn mr-10 submit-form-class" href="javascript:void(0);">{{ __('Save') }}</a>
+									</div>
+								</form>
+							</div>
 							
 						</div>
 					</div>
