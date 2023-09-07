@@ -92,8 +92,8 @@ Route::prefix('backend')->group(function(){
 	Route::post('/ImageImageUpload', 'Backend\UploadController@FileUpload')->name('backend.ImageImageUpload')->middleware('auth');
 	Route::post('/saveImage', 'Backend\ImageController@saveImage')->name('backend.saveImage')->middleware('auth');
 	Route::post('/getImageData', 'Backend\ImageController@getImageData')->name('backend.getImageData')->middleware('auth');
-	Route::post('/getBlogById', 'Backend\BlogController@getBlogById')->name('backend.getBlogById')->middleware('auth');
-	Route::post('/deleteBlog', 'Backend\BlogController@deleteBlog')->name('backend.deleteBlog')->middleware('auth');
+	Route::post('/getImageById', 'Backend\ImageController@getImageById')->name('backend.getImageById')->middleware('auth');
+	Route::post('/deleteImage', 'Backend\ImageController@deleteImage')->name('backend.deleteImage')->middleware('auth');
 
 	//Blog Page
 	Route::get('/blog','Backend\BlogController@blogPage')->name('backend.blog')->middleware('auth');
