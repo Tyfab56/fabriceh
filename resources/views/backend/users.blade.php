@@ -128,7 +128,7 @@
 								</div>
 								<!--/Data Entry Form/-->
 							</div>
-							<div id="tabId-2" class="tab-link-content tabshide">
+							<div id="tabId-2" class="tab-link-content tabhide">
 								<div class="tabs-head">
 									<h4>{{ __('Blog') }}</h4>
 									<a onclick="onFormPanel(2)" href="javascript:void(0);" class="btn green-btn btn-form float-right"><i class="fa fa-plus"></i> {{ __('Add New') }}</a>
