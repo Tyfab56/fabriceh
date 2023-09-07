@@ -191,22 +191,7 @@
 											</div>
 										</div>
 										
-										<div class="row">
-											<div class="col-md-12">
-												<div class="form-group">
-													<label for="seo_keywords"> {{ __('SEO Keywords (Separate with commas)') }}</label>
-													<textarea name="seo_keywords" id="seo_keywords" class="form-control" rows="3"></textarea>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-12">
-												<div class="form-group">
-													<label for="seo_desc">{{ __('SEO Description (Maximum 150 Characters)') }}</label>
-													<textarea name="seo_desc" id="seo_desc" class="form-control" rows="3"></textarea>
-												</div>
-											</div>
-										</div>
+										
 										
 										<div class="tabs-footer">
 											<input id="Record_ImageId" name="Record_ImageId" type="text" class="display-none"/>
