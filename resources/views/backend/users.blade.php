@@ -127,8 +127,6 @@
 								</div>
 								<!--/Data Entry Form/-->
 							</div>
-						</div>
-						<div class="tabs-body">
 							<div id="tabId-2" class="tab-link-content tabshow">
 								<div class="tabs-head">
 									<h4>{{ __('Users') }}</h4>
@@ -143,9 +141,9 @@
 												<table id="DataTable_UsersId" class="table table-striped table-bordered">
 													<thead>
 														<tr>
-															<th class="text-center">{{ __('backend.Titre') }}</th>
-															<th class="text-left">{{ __('backend.Description') }}</th>
-															<th class="text-left">{{ __('backend.Fichier') }}</th>
+															<th class="text-center">{{ __('SL.') }}</th>
+															<th class="text-left">{{ __('Name') }}</th>
+															<th class="text-left">{{ __('Email') }}</th>
 															<th class="text-center">{{ __('Action') }}</th>
 														</tr>
 													</thead>
@@ -157,8 +155,8 @@
 								</div>
 								<!--/Data grid-->
 								<!--Data Entry Form-->
-								<div id="form-panel-tabid-2" class="display-none">
-									<form novalidate="" data-validate="parsley" id="DataEntry_formId_1">
+								<div id="form-panel-tabid-1" class="display-none">
+									<form novalidate="" data-validate="parsley" id="DataEntry_formId_2">
 										<div class="row">
 											<div class="col-md-12">
 												<div class="form-group">
@@ -219,7 +217,7 @@
 											<input id="UserById" type="text" class="display-none" value="{{ route('backend.getUserById') }}"/>
 											<input id="deleteUserId" type="text" class="display-none" value="{{ route('backend.deleteUser') }}"/>
 											
-											<a data-submitformid="2" class="btn green-btn mr-10 submit-form-class" href="javascript:void(0);">{{ __('Save') }}</a>
+											<a data-submitformid="1" class="btn green-btn mr-10 submit-form-class" href="javascript:void(0);">{{ __('Save') }}</a>
 											<a onClick="onListPanel(1)" class="btn danger-btn btn-list" href="javascript:void(0);">{{ __('Cancel') }}</a>
 										</div>
 									</form>
@@ -227,6 +225,7 @@
 								<!--/Data Entry Form/-->
 							</div>
 						</div>
+						
 						
 					</div>
 				</div>
