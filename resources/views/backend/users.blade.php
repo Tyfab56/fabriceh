@@ -10,7 +10,7 @@
 		<!--Page Heading-->
 		<div class="row">
 			<div class="col pre-loader">
-				<div id="tw-loader" class="tw-loader">
+				<div id="tw-loader" class="tw-loader">	
 					<div class="tw-ellipsis">
 						<div></div><div></div><div></div><div></div>
 					</div>						
@@ -23,7 +23,7 @@
 			<div class="col-lg-12">
 
 				<div class="card">
-					<div class="card-header">{{ __('Users') }}</div>
+					<div class="card-header">{{ __('backend.Tables') }}</div>
 					<div class="card-body tabs-area p-0">
 						<ul class="tabs-nav">
 							<li><a data-tabid="1" class="link-tab active" href="javascript:void(0);"><i class="fa fa-minus"></i>{{ __('Users') }}</a></li>
