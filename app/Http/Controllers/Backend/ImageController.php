@@ -46,4 +46,121 @@ class ImageController extends Controller
         // Supprime l'image de la base de données
         // Redirige ensuite vers la liste des images
     }
+    //Blog page load
+    public function blogPage(){
+        return view('backend.users'); 
+    }
+
+    //Get data for Image by id
+    public function getImageById(Request $request){
+            $Data = array();
+            
+            $id = $request->id;
+            $Data['data']  = Image::where('id', $id)->first();
+    
+            return $Data;
+        }
+    //get data for Image
+    public function getImageData(Request $request){
+
+		$data = Image::orderBy('id','desc');
+		
+		$DataList = DataTables()->of($data)->make(true);
+		
+		return $DataList;
+	}
+
+    //Save data for Image
+    public function saveImage(Request $request){
+		$res = array();
+
+		$id = $request->input('Record_ImageId');
+		$title = $request->input('image_title');
+		$description = $request->input('image_description');
+		$image = $request->input('image_image');
+		
+
+		$validator_array = array(
+			'title' => $request->input('image_title'),
+			'description' => $request->input('image_description'),
+			'image_image' => $request->input('image_image')
+		);
+
+		$validator = Validator::make($validator_array, [
+			'title' => 'required',
+			'description' => 'required',
+			'image_image' => 'required'
+		]);
+
+		$errors = $validator->errors();		
+		
+		if($errors->has('title')){
+			$res['msgType'] = 'error';
+			$res['msg'] = $errors->first('title');
+			return response()->json($res);
+		}
+		
+		if($errors->has('description')){
+			$res['msgType'] = 'error';
+			$res['msg'] = $errors->first('description');
+			return response()->json($res);
+		}
+		
+		if($errors->has('image_image')){
+			$res['msgType'] = 'error';
+			$res['msg'] = $errors->first('image_image');
+			return response()->json($res);
+		}
+		
+		$data = array(
+			
+			'title' => $title,
+			'description' => $description,
+			'image' => $image
+			
+		);
+
+		if($id ==''){
+			$response = Image::create($data);
+			if($response){
+				$res['msgType'] = 'success';
+				$res['msg'] = __('New Data Added Successfully');
+			}else{
+				$res['msgType'] = 'error';
+				$res['msg'] = __('Data insert failed');
+			}
+		}else{
+			$response = Image::where('id', $id)->update($data);
+			if($response){
+				$res['msgType'] = 'success';
+				$res['msg'] = __('Data Updated Successfully');
+			}else{
+				$res['msgType'] = 'error';
+				$res['msg'] = __('Data update failed');
+			}
+		}
+		
+		return response()->json($res);
+    }
+
+    //Delete data for image
+	public function deleteImage(Request $request){
+		
+		$res = array();
+
+		$id = $request->id;
+		
+		if($id != 0){
+			$response = Image::where('id', $id)->delete();	
+			if($response){
+				$res['msgType'] = 'success';
+				$res['msg'] = __('Data Removed Successfully');
+			}else{
+				$res['msgType'] = 'error';
+				$res['msg'] = __('Data remove failed');
+			}
+		}
+		
+		return response()->json($res);
+	}	
 }

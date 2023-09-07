@@ -1,6 +1,6 @@
 "use strict";
 
-var $ = jQuery.noConflict();
+var $ = jQuery.noConflict(); 
 var FileUpload = '';
 var public_path;
 var RecordId = '';

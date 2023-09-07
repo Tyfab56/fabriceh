@@ -86,6 +86,15 @@ Route::prefix('backend')->group(function(){
 	Route::post('/getPortfolioById', 'Backend\PortfolioController@getPortfolioById')->name('backend.getPortfolioById')->middleware('auth');
 	Route::post('/deletePortfolio', 'Backend\PortfolioController@deletePortfolio')->name('backend.deletePortfolio')->middleware('auth');
 	
+
+	//Image Page
+	Route::get('/image','Backend\ImageController@ImagePage')->name('backend.image')->middleware('auth');
+	Route::post('/ImageImageUpload', 'Backend\UploadController@FileUpload')->name('backend.ImageImageUpload')->middleware('auth');
+	Route::post('/saveImage', 'Backend\ImageController@saveImage')->name('backend.saveImage')->middleware('auth');
+	Route::post('/getImageData', 'Backend\ImageController@getImageData')->name('backend.getImageData')->middleware('auth');
+	Route::post('/getBlogById', 'Backend\BlogController@getBlogById')->name('backend.getBlogById')->middleware('auth');
+	Route::post('/deleteBlog', 'Backend\BlogController@deleteBlog')->name('backend.deleteBlog')->middleware('auth');
+
 	//Blog Page
 	Route::get('/blog','Backend\BlogController@blogPage')->name('backend.blog')->middleware('auth');
 	Route::post('/BlogImageUpload', 'Backend\UploadController@FileUpload')->name('backend.BlogImageUpload')->middleware('auth');

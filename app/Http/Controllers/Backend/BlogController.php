@@ -12,7 +12,7 @@ class BlogController extends Controller
 {
 	//Blog page load
     public function blogPage(){
-        return view('backend.blog');
+        return view('backend.blog'); 
     }
 	
 	//get data for Blog
