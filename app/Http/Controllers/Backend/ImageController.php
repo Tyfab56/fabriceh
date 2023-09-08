@@ -117,9 +117,9 @@ class ImageController extends Controller
 		
 		$data = array(
 			
-			'title' => $title,
+			'titre' => $title,
 			'description' => $description,
-			'image' => $image
+			'fichier' => $image
 			
 		);
 

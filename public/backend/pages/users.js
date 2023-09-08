@@ -316,6 +316,25 @@ jQuery('#DataEntry_formId_1').parsley({
     }
 });
 
+//Form Submit 2 (Images Tab 2)
+jQuery('#DataEntry_formId_2').parsley({
+    listeners: {
+        onFieldValidate: function (elem) {
+            if (!$(elem).is(':visible')) {
+                return true;
+            }else {
+                showPerslyError();
+                return false;
+            }
+        },
+        onFormSubmit: function (isFormValid, event) {
+            if (isFormValid) {
+                onImagesAddEdit();
+                return false;
+            }
+        }
+    }
+});
 //Users Tab 1
 function onUsersAddEdit() {
 	var method = $("#saveUsersId").val();
@@ -348,7 +367,37 @@ function onUsersAddEdit() {
         }
     });
 }
+function onImagesAddEdit() {
+	var method = $("#saveImageId").val();
+    $.ajax({
+        "type": "POST",
+        "url": method,
+        "dataType": "json",
+        "data": $('#DataEntry_formId_2').serialize(),
+        async: true,
+        cache: false,
+        timeout: 30000,
+        error: function () {
+            return true;
+        },
+        "success": function (response) {
 
+            var msgType = response.msgType;
+            var msg = response.msg;
+
+            if (msgType == "success") {
+				onSuccessMsg(msg);
+				
+				$("#DataTable_ImagesId").dataTable().fnDraw();
+				
+				//Images Tab 2
+				onListPanel(2);
+            } else {
+                onErrorMsg(msg);
+            }
+        }
+    });
+}
 //Data Edit Form Panel For Tab 1
 function onEditPanelTab_1() {
 	onLoadUserEditData();
