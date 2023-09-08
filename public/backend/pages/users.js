@@ -109,35 +109,32 @@ onDataTableImages = $('#DataTable_ImagesId').DataTable({
 		type: "POST",
 		data:{},			
 	},		
+
 	columns: [{
-			data: null,
-			className: "text-center",
-			sWidth: "5%",
-			searchable: false,
-			orderable: false,
-			render: function (data, type, row, meta) {
-				return  meta.row + meta.settings._iDisplayStart + 1;
-			}
-		}, {
-			data: 'titre',
-			name: 'titre',
-			orderable: false,
-			sWidth: "20%"
-		}, {
-			data: 'description',
-			name: 'description',
-			orderable: false,
-			sWidth: "40%"
-		},{
-			data: null,
-			sWidth: "15%",
-			className: "text-center",
-			searchable: false,
-			orderable: false,
-			defaultContent: "<a class='editIconBtn' title='"+langtext.Edit+"' href='javascript:void(0);'><i class='fa fa-edit'></i></a>"
-				+ "<a class='deleteIconBtn' title='"+langtext.Delete+"' href='javascript:void(0);'><i class='fa fa-remove'></i></a>" 	
+		data: null,
+		className: "text-center",
+		sWidth: "5%",
+		searchable: false,
+		orderable: false,
+		render: function (data, type, row, meta) {
+			return  meta.row + meta.settings._iDisplayStart + 1;
 		}
-	]
+	}, {
+		data: 'title',
+		name: 'title',
+		orderable: false,
+		sWidth: "80%"
+	},{
+		data: null,
+		sWidth: "15%",
+		className: "text-center",
+		searchable: false,
+		orderable: false,
+		defaultContent: "<a class='editIconBtn' title='"+langtext.Edit+"' href='javascript:void(0);'><i class='fa fa-edit'></i></a>"
+			+ "<a class='deleteIconBtn' title='"+langtext.Delete+"' href='javascript:void(0);'><i class='fa fa-remove'></i></a>" 	
+	}
+]
+	
 });
 	
 
