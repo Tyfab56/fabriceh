@@ -75,7 +75,7 @@ class ImageController extends Controller
 
     //Save data for Image
     public function saveImage(Request $request){
-		dd($request);
+		
         $res = array();
 
 		$id = $request->input('Record_ImageId');
@@ -123,7 +123,7 @@ class ImageController extends Controller
 			'fichier' => $image
 			
 		);
-
+        dd($id);
 		if($id ==''){
 			$response = Image::create($data);
 			if($response){
