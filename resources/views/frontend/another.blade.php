@@ -39,7 +39,7 @@ $SettingsData = gSettings();
       <img src="{{ asset('media/'. $image->fichier) }}" class="img-fluid" alt="">
       <div class="gallery-title">{{ $image->titre }}</div> 
       <div class="gallery-links d-flex align-items-center justify-content-center">
-        <a href="https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-1.jpg" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+        <a href="{{ asset('media/'. $image->fichier) }}" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
         <a href="https://bootstrapmade.com/demo/templates/PhotoFolio/gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div>
