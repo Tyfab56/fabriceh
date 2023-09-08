@@ -123,7 +123,7 @@ class ImageController extends Controller
 			'fichier' => $image
 			
 		);
-        dd($id);
+        
 		if($id ==''){
 			$response = Image::create($data);
 			if($response){
@@ -134,6 +134,7 @@ class ImageController extends Controller
 				$res['msg'] = __('Data insert failed');
 			}
 		}else{
+            
 			$response = Image::where('id', $id)->update($data);
 			if($response){
 				$res['msgType'] = 'success';
