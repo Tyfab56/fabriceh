@@ -57,12 +57,11 @@ class ImageController extends Controller
 
     //Get data for Image by id
     public function getImageById(Request $request){
-            $Data = array();
-            
-            $id = $request->id;
-            $Data['data']  = Image::where('id', $id)->first();
-    
-            return $Data;
+
+        $id = $request->id;
+        $data  = Image::where('id', $id)->first();
+	
+		return $data;
         }
     //get data for Image
     public function getImageData(Request $request){

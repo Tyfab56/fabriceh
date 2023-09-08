@@ -428,7 +428,7 @@ function onLoadImageEditData() {
 
 			$("#Record_ImageId").val(datalist.id);
 			if(datalist.titre != null){
-				$("#image_title").val(datalist.name);
+				$("#image_title").val(datalist.titre);
 			}else{
 				$("#image_title").val('');
 			}
