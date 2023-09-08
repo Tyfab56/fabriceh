@@ -447,7 +447,7 @@ function onLoadImageEditData() {
 				$("#image_image_errorMgs").html('');
 			}else{
 				$("#image_image_show").html('');
-				$("##image_image").val('');
+				$("#image_image").val('');
 				$("#image_image_errorMgs").hide();
 				$("#image_image_errorMgs").html('');
 			}
