@@ -413,7 +413,7 @@ function onLoadUserEditData() {
     });
 }
 
-function onLoadImagesEditData() {
+function onLoadImageEditData() {
 	var method = $("#ImageById").val();
     $.ajax({
 		type: "POST",
