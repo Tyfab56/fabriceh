@@ -32,7 +32,7 @@ $SettingsData = gSettings();
 @endsection
 
 @section('content')
-<div class="row gy-4 justify-content-center inherited-styles-for-exported-element">
+<div class="row gy-4 justify-content-center inherited-styles-for-exported-element" style="max-width: 90%; margin: 0 auto;">
 @foreach ($images as $image)
 <div class="col-xl-3 col-lg-4 col-md-6">
     <div class="gallery-item h-100">
