@@ -36,7 +36,7 @@ $SettingsData = gSettings();
 @foreach ($images as $image)
 <div class="col-xl-3 col-lg-4 col-md-6">
     <div class="gallery-item h-100">
-      <img src="{{ asset('frontend/images/'. $image->fichier) }}" class="img-fluid" alt="">
+      <img src="{{ asset('media/'. $image->fichier) }}" class="img-fluid" alt="">
       <div class="gallery-title">{{ $image->titre }}</div> 
       <div class="gallery-links d-flex align-items-center justify-content-center">
         <a href="https://bootstrapmade.com/demo/templates/PhotoFolio/assets/img/gallery/gallery-1.jpg" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
