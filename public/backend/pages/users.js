@@ -120,7 +120,7 @@ onDataTableImages = $('#DataTable_ImagesId').DataTable({
 			return  meta.row + meta.settings._iDisplayStart + 1;
 		}
 	}, {
-		data: 'title',
+		data: 'titre',
 		name: 'title',
 		orderable: false,
 		sWidth: "80%"
