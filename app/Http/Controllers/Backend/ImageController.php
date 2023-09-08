@@ -1,9 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Backend;
 use App\Image;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use DataTables;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
 
 class ImageController extends Controller
 {
