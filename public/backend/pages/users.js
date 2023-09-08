@@ -353,6 +353,9 @@ function onUsersAddEdit() {
 function onEditPanelTab_1() {
 	onLoadUserEditData();
 }
+function onEditPanelTab_2() {
+	onLoadImageEditData();
+}
 
 function onLoadUserEditData() {
 	var method = $("#UserById").val();
@@ -410,6 +413,50 @@ function onLoadUserEditData() {
     });
 }
 
+function onLoadImagesEditData() {
+	var method = $("#ImageById").val();
+    $.ajax({
+		type: "POST",
+		url: method,
+		data:{
+			id: RecordId
+		},
+		cache: false,
+		dataType: 'json',
+		success: function(dataResult){
+			var datalist = dataResult;
+
+			$("#Record_ImageId").val(datalist.id);
+			if(datalist.titre != null){
+				$("#image_title").val(datalist.name);
+			}else{
+				$("#image_title").val('');
+			}
+			
+			if(datalist.email != null){
+				$("#image_description").val(datalist.description);
+			}else{
+				$("#image_description").val('');
+			}
+
+			
+			if(datalist.fichier != null){
+				$("#image_image_show").html('<img src="'+public_path+'/media/'+datalist.fichier+'">');
+				$("#image_image").val(datalist.fichier);
+				$("#image_image_errorMgs").hide();
+				$("#image_image_errorMgs").html('');
+			}else{
+				$("#image_image_show").html('');
+				$("##image_image").val('');
+				$("#image_image_errorMgs").hide();
+				$("#image_image_errorMgs").html('');
+			}
+			
+			//Users Tab 1
+			onEditPanel(2);
+        }
+    });
+}
 //Users Delete
 function onDeleteUsers() {
 	var method = $("#deleteUserId").val();
