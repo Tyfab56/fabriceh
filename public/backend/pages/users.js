@@ -398,6 +398,64 @@ function onImagesAddEdit() {
         }
     });
 }
+
+$("#load_image_image").on('change', function() {
+	image_image_upload_form();
+});
+
+function image_image_upload_form() {
+	FileUpload = $("#ImageFileUploadId").val();
+	
+	var data = new FormData();
+		data.append('FileName', $('#load_image_image')[0].files[0]);
+	var ReaderObj = new FileReader();
+	var imgname  =  $('#load_image_image').val();
+	var size  =  $('#load_image_image')[0].files[0].size;
+
+	var ext =  imgname.substr((imgname.lastIndexOf('.') +1));
+
+	if(ext=='jpg' || ext=='jpeg' || ext=='png' || ext=='gif' || ext=='PNG' || ext=='JPG' || ext=='JPEG'){
+		
+		$.ajax({
+			url: FileUpload,
+			type: "POST",
+			dataType : "json",
+			data:  data,
+			contentType: false,
+			cache: false,
+			processData:false,
+			enctype: 'multipart/form-data',
+			mimeType:"multipart/form-data",
+			success: function(response){
+				var msgType = response.msgType;
+				var msg = response.msg;
+				var filename = response.FileName;
+				if (msgType == 'success') {
+					$("#image_image_show").html('<img src="'+public_path+'/media/'+filename+'">');
+					$("#image_image").val(filename);
+					$("#image_image_errorMgs").hide();
+					$("#image_image_errorMgs").html('');
+					
+				} else {
+					$("#image_image_show").html('');
+					$("#image_image").val('');
+					$("#image_image_errorMgs").show();
+					$("#image_image_errorMgs").html(msg);
+				}
+			},
+			error: function(){
+				return false;
+			}	        
+		});
+		
+	}else{
+		$("#image_image_show").html('');
+		$("#image_image").val('');
+		$("#image_image_errorMgs").show();
+		$("#image_image_errorMgs").html(langtext.Sorry_only_you_can_upload_jpg_png_and_gif_file_type);
+	}
+}
+
 //Data Edit Form Panel For Tab 1
 function onEditPanelTab_1() {
 	onLoadUserEditData();

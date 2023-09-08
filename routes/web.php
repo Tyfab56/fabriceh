@@ -89,7 +89,7 @@ Route::prefix('backend')->group(function(){
 
 	//Image Page
 	Route::get('/image','Backend\ImageController@ImagePage')->name('backend.image')->middleware('auth');
-	Route::post('/ImageImageUpload', 'Backend\UploadController@FileUpload')->name('backend.ImageImageUpload')->middleware('auth');
+	Route::post('/imageImageUpload', 'Backend\UploadController@FileUpload')->name('backend.ImageImageUpload')->middleware('auth');
 	Route::post('/saveImage', 'Backend\ImageController@saveImage')->name('backend.saveImage')->middleware('auth');
 	Route::post('/getImageData', 'Backend\ImageController@getImageData')->name('backend.getImageData')->middleware('auth');
 	Route::post('/getImageById', 'Backend\ImageController@getImageById')->name('backend.getImageById')->middleware('auth');
