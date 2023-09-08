@@ -12,7 +12,7 @@ var onDataTableImages;
 	
 	$('#tw-content').hide();
 	
-	//public_path = $("#public_path").val();
+	public_path = $("#public_path").val();
 	
 	$.ajaxSetup({
 		headers: {
@@ -433,7 +433,7 @@ function onLoadImageEditData() {
 				$("#image_title").val('');
 			}
 			
-			if(datalist.email != null){
+			if(datalist.description != null){
 				$("#image_description").val(datalist.description);
 			}else{
 				$("#image_description").val('');
