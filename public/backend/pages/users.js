@@ -163,6 +163,32 @@ onDataTableImages = $('#DataTable_ImagesId').DataTable({
 			onCustomModal(msg, "onDeleteUsers");
 		}
 	});
+
+	//Images Edit/Delete Action
+	$('#DataTable_ImagesId').on('click', 'tr', function (e) {
+		e.preventDefault();
+		var cColumn = e.originalEvent.target;
+		var className = cColumn.className;
+
+		if ((className == 'editIconBtn')||(className == 'fa fa-edit')){
+			var data = onDataTableImages.row(this).data();
+			
+			RecordId = data.id;
+			$("#Record_ImageId").val(data.id);
+			
+			var msg = langtext.Do_you_really_want_to_edit_this_record;
+			onCustomModal(msg, "onEditPanelTab_2");
+		}
+		
+		if((className=='deleteIconBtn')||(className=='fa fa-remove')){
+			var data = onDataTableImages.row( this ).data();
+			
+			RecordId = data.id; 
+			
+			var msg = langtext.Do_you_really_want_to_delete_this_record;	                	  
+			onCustomModal(msg, "onDeleteUsers");
+		}
+	});
 	
 	$('.toggle-password').on('click', function() {
 		$(this).toggleClass('fa-eye-slash');
