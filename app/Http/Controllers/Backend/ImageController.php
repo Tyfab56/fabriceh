@@ -75,7 +75,8 @@ class ImageController extends Controller
 
     //Save data for Image
     public function saveImage(Request $request){
-		$res = array();
+		dd($request);
+        $res = array();
 
 		$id = $request->input('Record_ImageId');
 		$title = $request->input('image_title');
