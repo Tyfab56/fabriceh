@@ -26,6 +26,8 @@ $SettingsData = gSettings();
 	<link rel="stylesheet" href="{{asset('frontend/css/simplebar.css')}}"/>
 	<link rel="stylesheet" href="{{asset('frontend/css/lity.css')}}"/>
 	<link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
+	<link rel="stylesheet" href="{{asset('frontend/css/glightbox.css')}}" />
+   
 	<!-- Theme color change in settings menu -->
 	<style type="text/css">
 	body, .btn.black-btn, .resume-items .item .bullet, .tw-loader, .contact-form input, .contact-form textarea{background: {{$SettingsData['color']->theme_background_color}};}
@@ -125,6 +127,8 @@ $SettingsData = gSettings();
 <script src="{{asset('frontend/js/isotope.pkgd.min.js')}}"></script>
 <script src="{{asset('frontend/js/lity.min.js')}}"></script>
 <script src="{{asset('frontend/js/parsley.min.js')}}"></script>
+<script src="{{asset('frontend/js/glightbox.min.js')}}"></script>
+
 @if($SettingsData['recaptcha'] == 1)
 <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 @endif
