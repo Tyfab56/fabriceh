@@ -5,6 +5,7 @@ var FileUpload = '';
 var public_path;
 var RecordId = '';
 var onDataTableUsers;
+var onDataTableImages;
 
 (function ($) {
 	"use strict";
@@ -91,7 +92,7 @@ var onDataTableUsers;
 			}
 		]
 	});
-	
+
 	// Images
 	onDataTableImages = $('#DataTable_ImagesId').DataTable({
 		processing: true,
