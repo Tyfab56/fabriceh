@@ -39,7 +39,7 @@ $SettingsData = gSettings();
       <img src="{{ asset('media/'. $image->fichier) }}" class="img-fluid" alt="">
       <div class="gallery-title">{{ $image->titre }}</div> 
       <div class="gallery-links d-flex align-items-center justify-content-center">
-        <a href="{{ asset('media/'. $image->fichier) }}" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+        <a href="{{ asset('media/'. $image->fichier) }}" target='_blank' title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
         <a href="{{ $image->lien}}" class="details-link"><i class="bi bi-link-45deg"></i></a>
       </div>
     </div>
