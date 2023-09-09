@@ -14,6 +14,7 @@ class Image extends Model
     protected $fillable = [
         'titre',
         'description',
+        'lien',
         'fichier',
         'collection_id', // Clé étrangère vers la table 'collection'
     ];

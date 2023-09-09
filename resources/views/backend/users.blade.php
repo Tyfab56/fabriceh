@@ -175,6 +175,14 @@
 										</div>
 										<div class="row">
 											<div class="col-md-12">
+												<div class="form-group tpeditor">
+													<label for="image_description"><span class="red">*</span> {{ __('backend.Lien') }}</label>
+													<input name="image_lien" id="image_lien" class="form-control" rows="5"></textarea>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
 												<div class="form-group">
 													<label for="image_image"><span class="red">*</span> {{ __('backend.Fichier') }}</label>
 													<div class="errorMgs display-none" id="image_image_errorMgs"></div>

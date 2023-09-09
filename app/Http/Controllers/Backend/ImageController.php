@@ -80,6 +80,7 @@ class ImageController extends Controller
 
 		$id = $request->input('Record_ImageId');
 		$title = $request->input('image_title');
+        $lien = $request->input('image_lien');
 		$description = $request->input('image_description');
 		$image = $request->input('image_image');
 		
@@ -120,6 +121,7 @@ class ImageController extends Controller
 			
 			'titre' => $title,
 			'description' => $description,
+            'lien' => $lien,
 			'fichier' => $image
 			
 		);
@@ -134,7 +136,7 @@ class ImageController extends Controller
 				$res['msg'] = __('Data insert failed');
 			}
 		}else{
-            
+
 			$response = Image::where('id', $id)->update($data);
 			if($response){
 				$res['msgType'] = 'success';

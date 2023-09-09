@@ -403,6 +403,8 @@ $("#load_image_image").on('change', function() {
 	image_image_upload_form();
 });
 
+var lightbox = GLightbox();
+
 function image_image_upload_form() {
 	FileUpload = $("#ImageFileUploadId").val();
 	
@@ -539,7 +541,12 @@ function onLoadImageEditData() {
 			}else{
 				$("#image_title").val('');
 			}
-			
+			if(datalist.lien != null){
+				$("#image_lien").val(datalist.lien);
+			}else{
+				$("#image_lien").val('');
+			}
+
 			if(datalist.description != null){
 				$("#image_description").val(datalist.description);
 			}else{
