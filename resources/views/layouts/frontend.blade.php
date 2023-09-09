@@ -134,7 +134,7 @@ $SettingsData = gSettings();
 <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 @endif
 @stack('scripts')
-
+<script src="{{asset('frontend/js/main.js')}}"></script>
 
 <script type="text/javascript">
 	let cookieModal = document.querySelector(".cookie_consent_card");
