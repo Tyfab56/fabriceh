@@ -231,4 +231,5 @@
 
 @push('scripts')
 <script src="{{asset('backend/pages/homepage.js')}}"></script>
+
 @endpush

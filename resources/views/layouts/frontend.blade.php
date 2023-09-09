@@ -27,7 +27,7 @@ $SettingsData = gSettings();
 	<link rel="stylesheet" href="{{asset('frontend/css/lity.css')}}"/>
 	<link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
 	<link rel="stylesheet" href="{{asset('frontend/css/glightbox.css')}}" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
    
 	<!-- Theme color change in settings menu -->
 	<style type="text/css">
@@ -134,7 +134,7 @@ $SettingsData = gSettings();
 <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 @endif
 @stack('scripts')
-<script src="{{asset('frontend/js/main.js')}}"></script>
+
 
 <script type="text/javascript">
 	let cookieModal = document.querySelector(".cookie_consent_card");
