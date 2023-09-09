@@ -403,7 +403,7 @@ $("#load_image_image").on('change', function() {
 	image_image_upload_form();
 });
 
-var lightbox = GLightbox();
+
 
 function image_image_upload_form() {
 	FileUpload = $("#ImageFileUploadId").val();

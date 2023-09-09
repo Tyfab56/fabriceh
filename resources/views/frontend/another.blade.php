@@ -234,3 +234,8 @@ $SettingsData = gSettings();
 }
 </style>
 @endsection
+@push('scripts')
+<script type="text/javascript">
+var lightbox = GLightbox();
+</script>
+@endpush
