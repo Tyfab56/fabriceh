@@ -41,7 +41,7 @@ $SettingsData = gSettings();
         <h1 class="text-center">{{ __('Another') }}</h1>
     
     <!-- Sous-titre centré -->
-    <h2 class="text-center">{{ __('Welcome) }}</h2>
+    <h2 class="text-center">{{ __('Welcome') }}</h2>
             <!-- Image panoramique -->
             <a href=""><img src="" alt="Image Panoramique" class="img-fluid">
             
