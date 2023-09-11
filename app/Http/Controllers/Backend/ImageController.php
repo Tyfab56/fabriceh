@@ -82,6 +82,7 @@ class ImageController extends Controller
 		$title = $request->input('image_title');
         $lien = $request->input('image_lien');
 		$description = $request->input('image_description');
+		$collection= $request->input('image_collection');
 		$image = $request->input('image_image');
 		
 
@@ -121,6 +122,7 @@ class ImageController extends Controller
 			
 			'titre' => $title,
 			'description' => $description,
+			'collection' => $$collection,
             'lien' => $lien,
 			'fichier' => $image
 			

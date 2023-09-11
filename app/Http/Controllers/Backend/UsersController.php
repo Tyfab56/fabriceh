@@ -18,8 +18,7 @@ class UsersController extends Controller
     public function UsersPage(){
 		// Charger les collections
 		$collections = Collection::all();
-		dd($collections);
-        return view('backend.users',$collections);
+       return view('backend.users',compact('collections'));
     }
 	
 	//My profile page load

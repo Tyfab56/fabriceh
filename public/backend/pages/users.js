@@ -553,6 +553,13 @@ function onLoadImageEditData() {
 				$("#image_description").val('');
 			}
 
+			if(datalist.collection != null){
+				$("#image_collection").val(datalist.collection);
+			}else{
+				$("#image_collection").val('');
+			}
+
+
 			
 			if(datalist.fichier != null){
 				$("#image_image_show").html('<img src="'+public_path+'/media/'+datalist.fichier+'">');
