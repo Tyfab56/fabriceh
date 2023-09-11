@@ -33,14 +33,15 @@ $SettingsData = gSettings();
 
 @section('content')
 <div class="row">
-<h1 class="text-center">Mon Gros Titre</h1>
-    
-    <!-- Sous-titre centré -->
-    <h2 class="text-center">Mon Sous-Titre</h2>
+
 
     <!-- Ligne avec image panoramique et sous-titre -->
     <div class="row gy-4 justify-content-center">
         <div class="col-md-12 text-center">
+        <h1 class="text-center">Mon Gros Titre</h1>
+    
+    <!-- Sous-titre centré -->
+    <h2 class="text-center">Mon Sous-Titre</h2>
             <!-- Image panoramique -->
             <img src="{{ asset('chemin/vers/votre/image.jpg') }}" alt="Image Panoramique" class="img-fluid">
             
