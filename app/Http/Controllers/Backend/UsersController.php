@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\User;
+use App\Collection;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
@@ -15,7 +16,9 @@ class UsersController extends Controller
 	
 	//Users page load
     public function UsersPage(){
-        return view('backend.users');
+		// Charger les collections
+		$collections = Collection::all();
+        return view('backend.users',$collections);
     }
 	
 	//My profile page load
@@ -124,7 +127,7 @@ class UsersController extends Controller
         $data  = User::where('id', $id)->first();
 		$data->bactive = base64_decode($data->bactive);
 		// Retourner les collections pour le select
-		
+
 		return $data;
 	}
 	
