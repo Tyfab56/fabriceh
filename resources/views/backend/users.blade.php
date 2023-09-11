@@ -182,6 +182,19 @@
 											</div>
 										</div>
 										<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<label for="image_collection"><span class="red">*</span> Collection</label>
+												<select name="image_collection" id="image_collection" class="form-control parsley-validated" data-required="true">
+													@foreach ($collections as $collection)
+														<option value="{{ $collection->id }}">{{ $collection->collection }}</option>
+													@endforeach
+												</select>
+											</div>
+										</div>
+									</div>
+
+										<div class="row">
 											<div class="col-md-12">
 												<div class="form-group">
 													<label for="image_image"><span class="red">*</span> {{ __('backend.Fichier') }}</label>

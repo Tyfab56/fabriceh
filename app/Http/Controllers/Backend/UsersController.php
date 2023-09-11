@@ -123,6 +123,8 @@ class UsersController extends Controller
 		$id = $request->id;
         $data  = User::where('id', $id)->first();
 		$data->bactive = base64_decode($data->bactive);
+		// Retourner les collections pour le select
+		
 		return $data;
 	}
 	

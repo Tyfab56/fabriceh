@@ -32,6 +32,23 @@ $SettingsData = gSettings();
 @endsection
 
 @section('content')
+<div class="ici">
+    <!-- Gros titre -->
+    <h1>Gros Titre</h1>
+    
+    <!-- Sous-titre -->
+    <h2>Sous-Titre</h2>
+    
+    <!-- Ligne avec une petite image panoramique et un sous-titre -->
+    <div class="row gy-4">
+        <div class="col-md-6">
+            <img src="chemin_vers_votre_image_panoramique.jpg" class="img-fluid" alt="Image Panoramique">
+        </div>
+        <div class="col-md-6">
+            <h3>Sous-Titre de l'Image Panoramique</h3>
+            <!-- Autres détails ou contenu liés à l'image panoramique ici -->
+        </div>
+    </div>
 <div class="row gy-4 justify-content-center inherited-styles-for-exported-element" style="max-width: 90%; margin: 0 auto;">
 @foreach ($images as $image)
 <div class="col-xl-3 col-lg-4 col-md-6">
