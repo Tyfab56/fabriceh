@@ -553,8 +553,8 @@ function onLoadImageEditData() {
 				$("#image_description").val('');
 			}
 
-			if(datalist.collection != null){
-				$("#image_collection").val(datalist.collection);
+			if(datalist.collection_id != null){
+				$("#image_collection").val(datalist.collection_id);
 			}else{
 				$("#image_collection").val('');
 			}

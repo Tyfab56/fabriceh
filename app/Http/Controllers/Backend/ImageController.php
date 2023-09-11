@@ -122,7 +122,7 @@ class ImageController extends Controller
 			
 			'titre' => $title,
 			'description' => $description,
-			'collection' => $$collection,
+			'collection_id' => $$collection,
             'lien' => $lien,
 			'fichier' => $image
 			
