@@ -38,15 +38,15 @@ $SettingsData = gSettings();
     <!-- Ligne avec image panoramique et sous-titre -->
     <div class="row gy-4 justify-content-center">
         <div class="col-md-12 text-center">
-        <h1 class="text-center">Mon Gros Titre</h1>
+        <h1 class="text-center">{{ __('Another') }}</h1>
     
     <!-- Sous-titre centré -->
-    <h2 class="text-center">Mon Sous-Titre</h2>
+    <h2 class="text-center">M{{ __('Welcome) }}</h2>
             <!-- Image panoramique -->
-            <img src="{{ asset('chemin/vers/votre/image.jpg') }}" alt="Image Panoramique" class="img-fluid">
+            <a href=""><img src="{{ asset('chemin/vers/votre/image.jpg') }}" alt="Image Panoramique" class="img-fluid">
             
             <!-- Sous-titre pour l'image -->
-            <h3>Sous-Titre de l'Image</h3>
+            <h3>{{ __('AnoPanoramics') }}</h3></a>
         </div>
     </div>
     
@@ -256,5 +256,9 @@ $SettingsData = gSettings();
 @push('scripts')
 <script type="text/javascript">
 var lightbox = GLightbox();
+var skill_barColor = "{{$SettingsData['color']->fill_color}}";
+var animatedColor = "{{$SettingsData['color']->theme_background_color}}";
+var home_page = "{{$SettingsData['home_page']}}";
+var skillsdata = '';
 </script>
 @endpush
