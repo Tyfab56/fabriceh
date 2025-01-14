@@ -8,6 +8,6 @@ class CoachingController extends Controller
 {
     public function show()
     {
-        return view('coaching.islande'); // Retourne la vue "resources/views/coaching/islande.blade.php"
+        return view('frontend.coach'); // Retourne la vue "resources/views/coaching/islande.blade.php"
     }
 }
