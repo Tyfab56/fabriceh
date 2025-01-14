@@ -9,11 +9,8 @@ require("./bootstrap");
 import { createApp } from "vue";
 import IslandCoachingHero from "./components/IslandCoachingHero.vue";
 
-// Créez l'application Vue
-const app = createApp({});
-
-// Enregistrez le composant globalement
-app.component("island-coaching-hero", IslandCoachingHero);
-
-// Montez l'application sur l'élément `#app`
-app.mount("#app");
+createApp({
+    components: {
+        IslandCoachingHero,
+    },
+}).mount("#app");
