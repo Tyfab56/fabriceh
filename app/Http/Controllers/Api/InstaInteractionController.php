@@ -224,7 +224,7 @@ class InstaInteractionController extends Controller
     {
         try {
             // Rechercher un follower aléatoire avec un username et un ID NULL
-            $follower = InstaFollower::whereNull('id')
+            $follower = InstaFollower::whereNull('instagram_id')
                 ->whereNotNull('username')
                 ->inRandomOrder()
                 ->first();
@@ -237,7 +237,7 @@ class InstaInteractionController extends Controller
             // Retourner les informations du follower
             return response()->json([
                 'username' => $follower->username,
-                'id' => $follower->id, // Doit être null ici
+                'id' => $follower->instagram_id, // Doit être null ici
             ]);
         } catch (\Exception $e) {
             // Retourner une erreur en cas d'exception
