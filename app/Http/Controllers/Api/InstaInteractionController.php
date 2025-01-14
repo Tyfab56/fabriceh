@@ -219,4 +219,24 @@ class InstaInteractionController extends Controller
             'new_like_count' => $newLikeCount,
         ]);
     }
+
+    public function getRandomFollowerWithoutId()
+    {
+        // Rechercher un follower aléatoire avec un username et un id NULL
+        $follower = InstaFollower::whereNull('id')
+            ->whereNotNull('username')
+            ->inRandomOrder()
+            ->first();
+
+        // Si aucun follower ne correspond
+        if (!$follower) {
+            return response()->json(['error' => 'No follower found with a username and without an ID'], 404);
+        }
+
+        // Retourner les informations du follower
+        return response()->json([
+            'username' => $follower->username,
+            'id' => $follower->id, // Doit être null ici
+        ]);
+    }
 }

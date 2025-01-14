@@ -15,6 +15,8 @@ use App\Http\Controllers\Api\InstaInteractionController;
 |
 */
 
+Route::get('/followers/random-without-id', [InstaInteractionController::class, 'getRandomFollowerWithoutId']);
+
 Route::controller(InstaInteractionController::class)->group(function () {
     // Récupérer les followers éligibles pour une interaction
     Route::get('/followers/eligible', 'getEligibleFollowers');
