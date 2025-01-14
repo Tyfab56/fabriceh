@@ -19,6 +19,7 @@ Route::get('/', 'Frontend\FrontendController@index')->name('frontend.home');
 Route::get('/blog', 'Frontend\FrontendController@getBlogs')->name('frontend.blog');
 Route::get('/another/{id?}', 'Frontend\FrontendController@another')->name('frontend.another');
 Route::get('/another/panoramics', 'Frontend\FrontendController@anopano')->name('frontend.anotherpano');
+Route::get('/coaching-islande', [CoachingController::class, 'show'])->name('coaching.islande');
 
 Route::get('/bwr', 'Frontend\FrontendController@bwr')->name('frontend.bwr');
 Route::get('/newsroom/{id?}', 'Frontend\FrontendController@newsroom')->name('frontend.newsroom');
@@ -165,5 +166,4 @@ Route::prefix('backend')->group(function () {
 
     //Langauge Combo
     Route::post('/getLangaugeCombo', 'Backend\LangaugesController@getLangaugeCombo')->name('backend.getLangaugeCombo')->middleware('auth');
-    Route::get('/coaching-islande', [CoachingController::class, 'show'])->name('coaching.islande');
 });
