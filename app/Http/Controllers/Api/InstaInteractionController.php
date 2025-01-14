@@ -222,21 +222,26 @@ class InstaInteractionController extends Controller
 
     public function getRandomFollowerWithoutId()
     {
-        // Rechercher un follower aléatoire avec un username et un id NULL
-        $follower = InstaFollower::whereNull('id')
-            ->whereNotNull('username')
-            ->inRandomOrder()
-            ->first();
+        try {
+            // Rechercher un follower aléatoire avec un username et un ID NULL
+            $follower = InstaFollower::whereNull('id')
+                ->whereNotNull('username')
+                ->inRandomOrder()
+                ->first();
 
-        // Si aucun follower ne correspond
-        if (!$follower) {
-            return response()->json(['error' => 'No follower found with a username and without an ID'], 404);
+            // Si aucun follower n'est trouvé
+            if (!$follower) {
+                return response()->json(['error' => 'No follower found with a username and without an ID'], 404);
+            }
+
+            // Retourner les informations du follower
+            return response()->json([
+                'username' => $follower->username,
+                'id' => $follower->id, // Doit être null ici
+            ]);
+        } catch (\Exception $e) {
+            // Retourner une erreur en cas d'exception
+            return response()->json(['error' => 'An error occurred', 'details' => $e->getMessage()], 500);
         }
-
-        // Retourner les informations du follower
-        return response()->json([
-            'username' => $follower->username,
-            'id' => $follower->id, // Doit être null ici
-        ]);
     }
 }
