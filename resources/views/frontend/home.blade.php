@@ -42,7 +42,7 @@ $SettingsData = gSettings();
                 </div>
                 <h1>{{ $name }}</h1>
                 <h3>{{ $subtitle }}</h3>
-                <h3>{{ $subtitle }}</h3>
+                <h3>GO FOR IT</h3>
                 @if($btntext != '')
                 <a href="/another" class="btn black-btn margin-rb mt-3">{{ $btntext }}</a>
                 @endif
