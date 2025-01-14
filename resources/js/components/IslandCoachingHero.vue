@@ -1,10 +1,9 @@
 <template>
     <section class="hero-section">
         <div class="hero-overlay">
-            <h1 class="hero-title">
-                Évitez les erreurs et optimisez votre séjour en Islande, en 30
-                minutes
-            </h1>
+            <h1>Évitez les erreurs</h1>
+            <h1 class="hero-title">Optimisez votre séjour en Islande</h1>
+            <h1>en 30 minutes</h1>
             <p class="hero-subtitle">
                 Bénéficiez d’un coaching sur mesure pour un itinéraire clair,
                 des réponses précises et une sérénité totale.
