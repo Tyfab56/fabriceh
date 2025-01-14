@@ -45,7 +45,7 @@ $SettingsData = gSettings();
                 <h3>GO FOR IT</h3>
                 @if($btntext != '')
                 <a href="/another" class="btn black-btn margin-rb mt-3">{{ $btntext }}</a>
-                <p>A voir absolument</p>
+              
                 @endif
                 <h2 class="ah-headline clip">
 
