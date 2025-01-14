@@ -8,6 +8,6 @@ class CoachingController extends Controller
 {
     public function show()
     {
-        return view('frontend.coach');
+        return view('home');
     }
 }
