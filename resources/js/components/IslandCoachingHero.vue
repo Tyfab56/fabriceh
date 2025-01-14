@@ -26,7 +26,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("/medias/hero1.webp"); /* Replace with your image path */
+    background-image: url("/media/hero1.webp"); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     filter: brightness(0.7); /* To make the image barely perceptible */
