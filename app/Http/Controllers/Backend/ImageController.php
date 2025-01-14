@@ -77,12 +77,12 @@ class ImageController extends Controller
     public function saveImage(Request $request){
 		
         $res = array();
-
+        
 		$id = $request->input('Record_ImageId');
 		$title = $request->input('image_title');
         $lien = $request->input('image_lien');
 		$description = $request->input('image_description');
-		$collection= $request->input('image_collection');
+		$collection = $request->input('image_collection');
 		$image = $request->input('image_image');
 		
 
