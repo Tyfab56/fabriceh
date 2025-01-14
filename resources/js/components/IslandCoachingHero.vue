@@ -1,7 +1,7 @@
 <template>
     <section class="hero-section">
         <div class="hero-overlay">
-            <h1>Évitez les erreurs</h1>
+            <h1 class="hero-top">Évitez les erreurs</h1>
             <h1 class="hero-title">Optimisez votre séjour en Islande</h1>
             <h1>en 30 minutes</h1>
             <p class="hero-subtitle">
@@ -40,6 +40,11 @@ export default {
 
 .hero-title {
     font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.hero-top {
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
